@@ -15,7 +15,8 @@ nav a {
 }
 
 .logo {
-    width: 80px;
+    width: 60px;
+    border-radius: 25px;
 }
 nav a:hover {
     background-color: #807b9c;
@@ -94,6 +95,9 @@ footer {
     border-radius: 25px;
 }
 
+#box-img {
+    border-radius: 20px;
+}
 #box h1 {
     text-align: left;
     margin-top: 50px;
