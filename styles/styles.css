@@ -1,71 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rock+Salt&display=swap');
 
-
-nav a {
-    text-align: center;
-    color: #0c0c0bb8;
-    text-decoration: none;
-    padding: 35px;
-}
-
-#logo_link {
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
-}
-
-.logo {
-    width: 60px;
-    border-radius: 25px;
-}
-nav a:hover {
-    background-color: #807b9c;
-    color: #f8f4f0b8;
-}
-nav {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    text-decoration: none;
-}
-a {
-    text-align: center;
-    text-decoration: none;
-}
-header {
-    display: grid;
-    width: 60%;
-    grid-template-columns: 150px auto;
-    background-color: #ede65fb8;
-    border-radius: 15px;
-    
-}
-
 h2 {
     margin: 0;
 }
-
-nav a:hover {
-    background-color: #9c96c7;
-    color: #f8f4f0b8;
-    border-radius: 15px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-a {
-    text-align: center;
-    text-decoration: none;
+#box {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    width: 60%;
+    margin-top: 5px;
+    background-color: #4f7fe689;
+    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
+    border-radius: 25px;
 }
 
 footer {
-    background-color: #ede65fb8;
+    background-color: #4f7fe689;
     width: 60%;
     height: 60px;
     padding: 20px 0;
@@ -74,26 +23,18 @@ footer {
     align-items: center;
     margin-bottom: 50px;
     border-radius: 15px;
+    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
      
 }
 
 .box-title {
     width: 60%;
-    color: #228217b8;
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
 
-#box {
-    display: grid;
-    grid-template-columns: 1fr 2fr ;
-    width: 60%;
-    margin-top: 5px;
-    background-color: #9bc2e3;
-    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
-    border-radius: 25px;
-}
+
 
 #box-img {
     border-radius: 20px;
@@ -105,10 +46,6 @@ footer {
     font-size: 30px;
 }
 
-.msg p {
-    color: #12120ab8;
-    padding-bottom: 15px;
-}
 
 hr.top {
     border: 1px solid black;
@@ -128,29 +65,4 @@ hr.bottom {
     width: 70%;
     text-shadow: 0px 0px 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
