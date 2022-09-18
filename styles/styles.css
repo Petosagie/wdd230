@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rock+Salt&display=swap');
 
+#container{
+    max-width:600px;
+    margin: auto;
+} 
 h2 {
     margin: 0;
 }
 #box {
     display: grid;
     grid-template-columns: 1fr 2fr ;
-    width: 60%;
+    /* width: 60%; */
     margin-top: 5px;
     background-color: #4f7fe689;
     box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
@@ -15,7 +19,7 @@ h2 {
 
 footer {
     background-color: #4f7fe689;
-    width: 60%;
+    /* width: 60%; */
     height: 60px;
     padding: 20px 0;
     margin-top: 30px;
@@ -28,7 +32,7 @@ footer {
 }
 
 .box-title {
-    width: 60%;
+    /* width: 60%; */
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
     margin-top: 10px;
@@ -49,20 +53,21 @@ footer {
 
 hr.top {
     border: 1px solid black;
-    width: 60%;
+    /* width: 60%; */
     margin-left: 0;
 }
 hr.bottom {
     border: 1px solid black;
-    width: 60%;
+    /* width: 60%; */
     margin-left: 0;
 }
 .bold-text{
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     text-align: left;
-    width: 70%;
+    /* width: 70%; */
     text-shadow: 0px 0px 8px;
 }
+
 
