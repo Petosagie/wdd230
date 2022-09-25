@@ -87,7 +87,7 @@ hr.bottom {
 }
 .home-grid{
     display: grid;
-    grid-template-columns: (1fr);
+    grid-template-columns: 1fr;
     grid-gap: 1em;
     margin-top: 40px;
     
