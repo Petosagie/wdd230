@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rock+Salt&display=swap');
+
+#container{
+    max-width:600px;
+    margin: auto;
+} 
+h2 {
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    /* width: 60%; */
+    margin-top: 5px;
+    background-color: #4f7fe689;
+    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
+    border-radius: 25px;
+}
+
+.headerbox {    
+    /* width: 60%; */
+    margin-top: 10px;
+    background-color: #4f7fe689;
+    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    align-items: center;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    
+    
+}
+
+footer {
+    background-color: #4f7fe689;
+    /* width: 60%; */
+    height: 60px;
+    padding: 20px 0;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
+     
+}
+
+.headerbox h1, h1 {
+    /* width: 60%; */
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    /* height: 50px;
+     margin-top: 50px; */
+    color: #54a64be7;
+    
+}
+
+header img {
+    border-radius: 20px;
+}
+
+
+hr.top {
+    border: 1px solid black;
+    /* width: 60%; */
+    margin-left: 0;
+}
+hr.bottom {
+    border: 1px solid black;
+    /* width: 60%; */
+    margin-left: 0;
+}
+.bold-text{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    /* width: 70%; */
+    text-shadow: 0px 0px 8px;
+}
+
+#lesstwo h1, h2{
+    text-align: center;
+         
+
+}
+h2 {
+    margin: 0;
+}
+
+
+
+#box {
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    /* width: 60%; */
+    margin-top: 5px;
+    background-color: #4f7fe689;
+    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
+    border-radius: 25px;
+}
+
+footer {
+    background-color: #4f7fe689;
+    /* width: 60%; */
+    height: 60px;
+    padding: 20px 0;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
+     
+}
+
+.box-title {
+    /* width: 60%; */
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin: auto;
+    
+}
+
+
+
+
+
+#box-img {
+    border-radius: 20px;
+}
+#box h1 {
+    text-align: left;
+    margin-top: 50px;
+    color: #54a64be7;
+    font-size: 30px;
+}
+
+
+hr.top {
+    border: 1px solid black;
+    /* width: 60%; */
+    margin-left: 0;
+}
+hr.bottom {
+    border: 1px solid black;
+    /* width: 60%; */
+    margin-left: 0;
+}
+.bold-text{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    /* width: 70%; */
+    text-shadow: 0px 0px 8px;
+}
+
+

@@ -1,0 +1,22 @@
+@media only screen and (min-width:32.5em){
+  
+    home-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .headerbox {    
+        /* width: 60%; */
+       width: auto;
+        
+    }
+    .nike{
+        grid-column: 1/2;
+    }
+    .google{
+        grid-column: 2/3;
+    }
+    .dstv{
+        grid-column: 1/3;
+    }
+}

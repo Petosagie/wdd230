@@ -7,7 +7,8 @@
 h2 {
     margin: 0;
 }
-#box {
+
+header {
     display: grid;
     grid-template-columns: 1fr 2fr ;
     /* width: 60%; */
@@ -15,6 +16,19 @@ h2 {
     background-color: #4f7fe689;
     box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
     border-radius: 25px;
+    
+}
+
+.headerbox {    
+    /* width: 60%; */
+    margin-top: 10px;
+    background-color: #4f7fe689;
+    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    align-items: center;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    
 }
 
 footer {
@@ -31,23 +45,19 @@ footer {
      
 }
 
-.box-title {
+.headerbox h1, h1 {
     /* width: 60%; */
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
-    margin-top: 10px;
-}
-
-
-
-#box-img {
-    border-radius: 20px;
-}
-#box h1 {
-    text-align: left;
-    margin-top: 50px;
+    text-align: center;
+    /* height: 50px;
+     margin-top: 50px; */
     color: #54a64be7;
-    font-size: 30px;
+    
+}
+
+header img {
+    border-radius: 20px;
 }
 
 
@@ -70,4 +80,36 @@ hr.bottom {
     text-shadow: 0px 0px 8px;
 }
 
-
+#lesstwo h1, h2{
+    text-align: center;
+    
+         
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: (1fr);
+    grid-gap: 1em;
+    margin-top: 40px;
+    
+}
+.nike {
+    margin-top: 30px;
+    grid-column: 1/2;
+    max-width: 20rem;
+    margin: .5rem;
+    justify-self: center;
+}
+.google {
+    margin-top: 30px;
+    grid-column: 1/2;
+    max-width: 20rem;
+    margin: .5rem;
+    justify-self: center;
+}
+.dstv{
+    margin-top: 20px;
+    grid-column: 1/2;
+    max-width: 20rem;
+    margin: .5rem;
+    justify-self: center;   
+}

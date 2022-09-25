@@ -1,0 +1,36 @@
+ @media only screen and (min-width:80em){
+    /* #container {
+        display: grid;
+    } */
+    .home-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .headerbox {    
+        /* width: 60%; */
+       width: auto;
+        margin-bottom: 40px;
+    }
+    .nike{
+        grid-column: 1/2;
+        max-width: 22rem;
+        
+    }
+    .nikeimg{
+        max-width: 22rem;
+    }
+    .google{
+        grid-column: 2/3;
+        max-width: 22rem;
+    }
+    .googleimg{
+        max-width: 22rem;
+    }
+    .dstv{
+        grid-column: 3/4;
+    }
+    .dstvimg{
+        max-width: 22rem;
+    }
+}
