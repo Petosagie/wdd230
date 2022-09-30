@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rock+Salt&display=swap');
+
+body {
+    background-color: #f2ecec;
+}
+main {
+    font-family: Roboto, san-serif;
+    color: #000;
+    max-width: 750px;
+    margin: 0 auto;
+    display: grid;
+    margin-bottom: 150px;
+}
+header, footer {
+    background-color: #2C6CBC;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: Roboto, san-serif;
+    color: #fbfbfb;
+    text-align: center;
+}
+
+
+
+header h1{
+    color:#d8ef63;
+}
+nav {
+    font-family: Roboto, san-serif;
+    background-color: #2C6CBC;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fbfbfb;
+}
+nav div {
+    flex: 1 1 auto;
+}
+nav a {
+    display: block;
+    color: #fbfbfb;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #fdbf5e;
+    color: #000000;
+    font-size: 1.1rem;
+}
+main a {
+    text-align: center;
+}
+h1, h2 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    margin: 10px;
+    text-align: center;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3, h4 {
+    font-family: Roboto, san-serif;
+    margin: 10px;
+    text-align: center;
+}
+p {
+    margin: 0 auto;
+    text-align: center;
+}
+img {
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+
+}
+.link {
+    color: #fff;
+    text-decoration: underline;
+}
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  .primary {
+    background-color: #2C6CBC;
+  }
+  .secondary {
+    background-color:#d8ef63 ;
+  }
+  .accent1 {
+    background-color: #fdbf5e;
+  }
+
+  .accent2 {
+    background-color:#fbfbfb ;
+  }
+  p.colored {
+    background-color: #8e94e3b2;
+    color: #161a7c;
+  }

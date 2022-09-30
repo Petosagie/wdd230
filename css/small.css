@@ -5,12 +5,12 @@
     margin: auto;
 } 
 h2 {
-    margin: 0;
+    margin: auto;
 }
 
 header {
     display: grid;
-    grid-template-columns: 1fr 2fr ;
+    grid-template-columns: 1fr 3fr ;
     /* width: 60%; */
     margin-top: 5px;
     background-color: #4f7fe689;
@@ -50,6 +50,7 @@ footer {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
     text-align: center;
+    margin: 0, auto;
     /* height: 50px;
      margin-top: 50px; */
     color: #54a64be7;

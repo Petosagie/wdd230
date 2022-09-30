@@ -1,36 +1,29 @@
- @media only screen and (min-width:80em){
-    #container {
-        max-width:1000px;
-        margin: auto;
+
+@media screen and (min-width: 1024px) {
+    .card__image {
+      height: 70vh;
     }
-    .home-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1em;
+
+   
+    .card {
+        margin-bottom: 0;
     }
-    .headerbox {    
-        /* width: 60%; */
-       width: auto;
-        
+    .card:nth-of-type(2) {
+        margin-right: 0.8rem;
     }
-    .nike{
-        grid-column: 1/2;
-        max-width: 22rem;
+    
+    .card:last-of-type {
+        margin-right: 0;
     }
-    .nikeimg{
-        max-width: 22rem;
+   
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
     }
-    .google{
-        grid-column: 2/3;
-        max-width: 22rem;
+    
+    .card:last-of-type {
+        grid-column: 3;
     }
-    .googleimg{
-        max-width: 22rem;
-    }
-    .dstv{
-        grid-column: 3/4;
-    }
-    .dstvimg{
-        max-width: 22rem;
-    }
-}
+    
+      
+  }
+  

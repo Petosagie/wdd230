@@ -1,115 +1,186 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rock+Salt&display=swap');
 
-#container{
-    max-width:600px;
+/* Variables */
+
+:root {
+    --color-primary: #232946;
+    --color-secondary: #fffffe;
+    --color-tertiary: #d4d8f0;
+    --section-header-bg: #232946;
+    --section-header-text: #b8c1ec;
+    --color-link: #0000ff;
+  }
+  
+  /* General */
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
     margin: auto;
-} 
-h2 {
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
     margin: 0;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 1fr 2fr ;
-    /* width: 60%; */
-    margin-top: 5px;
-    background-color: #4f7fe689;
-    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
-    border-radius: 25px;
-    
-}
-
-.headerbox {    
-    /* width: 60%; */
-    margin-top: 10px;
-    background-color: #4f7fe689;
-    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
-    border-radius: 25px;
-    align-items: center;
-    padding-top: 1px;
-    padding-bottom: 20px;
-    
-}
-
-footer {
-    background-color: #4f7fe689;
-    /* width: 60%; */
-    height: 60px;
-    padding: 20px 0;
-    margin-top: 30px;
+  }
+  
+  /* Typography */
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.618rem;
+  }
+  
+  header,
+  footer {
     text-align: center;
-    align-items: center;
-    margin-bottom: 50px;
-    border-radius: 15px;
-    box-shadow: 5px 4px 8px 5px rgba(0,0,0,0.2);
-     
-}
+  }
+  
+  /* Class Selectors */
 
-.headerbox h1, h1 {
-    /* width: 60%; */
+  
+  h2,
+  h3 {
+    font-family: "Merriweather", Georgia, serif;
+    letter-spacing: 0.09rem;
+  }
+  
+  h1 {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-    font-size: 2em;
-    text-align: center;
-    /* height: 50px;
-     margin-top: 50px; */
-    color: #54a64be7;
-    
-}
-
-header img {
-    border-radius: 20px;
-}
-
-
-hr.top {
-    border: 1px solid black;
-    /* width: 60%; */
-    margin-left: 0;
-}
-hr.bottom {
-    border: 1px solid black;
-    /* width: 60%; */
-    margin-left: 0;
-}
-.bold-text{
-    margin-top: 20px;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: left;
-    /* width: 70%; */
-    text-shadow: 0px 0px 8px;
-}
-
-#lesstwo h1, h2{
-    text-align: center;
-    
-         
-}
-.home-grid{
+    font-size: 2.618rem;
+    letter-spacing: 0.09rem;
+  }
+  
+  /* Foreground and Background */
+  
+  body {
+    background: var(--color-tertiary);
+    color: var(--color-primary);
+  }
+  
+  header,
+  footer {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+  }
+  
+  .card {
+    background: var(--color-secondary);
+  }
+  
+  a {
+    display: inline-block;
+    color: var(--color-link);
+    text-decoration: none;
+  }
+  
+  /* Card */
+  .card {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .card__title {
+    background: var(--section-header-bg);
+    color: var(--section-header-text);
+  }
+  
+  .card__description {
+    line-height: 1.618;
+  }
+  
+  
+  
+  
+  /* Links */
+  a:hover,
+  a:focus {
+    border-bottom: 1px dotted var(--color-link);
+    color: #ff0000;
+  }
+  
+  /* White Space */
+  .card-container {
+    padding: 0 1.6rem 1.6rem;
+  }
+  
+  .card {
+    margin-bottom: 1.6rem;
+  }
+  
+  .card:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .card__title {
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .card__image {
+    margin-bottom: 1.6rem;
+  }
+  
+  .card__body {
+    padding: 0 1.6rem 1.6rem;
+  }
+  
+  .card:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  header {
+    padding: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  footer {
+    padding: 1.6rem 0;
+  }
+  
+  h1,
+  a {
+    margin-bottom: 1.6rem;
+  }
+  
+  
+    .card-container,
+    .card__body {
+      padding: 0 2.4rem 2.4rem;
+    }
+  
+    .card {
+      margin-right: 0.8rem;
+    }
+    .card:last-of-type {
+      margin-right: 0;
+    }
+    .card:nth-of-type(2) {
+      margin-right: 0;
+    }
+  
+  
+  
+  /* Layout */
+  
+  .card-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1em;
-    margin-top: 40px;
-    
-}
-.nike {
-    margin-top: 30px;
-    grid-column: 1/2;
-    max-width: 20rem;
-    margin: .5rem;
-    justify-self: center;
-}
-.google {
-    margin-top: 30px;
-    grid-column: 1/2;
-    max-width: 20rem;
-    margin: .5rem;
-    justify-self: center;
-}
-.dstv{
-    margin-top: 20px;
-    grid-column: 1/2;
-    max-width: 20rem;
-    margin: .5rem;
-    justify-self: center;   
-}
+    margin: auto;
+    max-width: 1440px;
+  }
+  
+  
+  
+  
+  

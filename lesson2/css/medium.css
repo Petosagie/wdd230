@@ -1,22 +1,15 @@
-@media only screen and (min-width:32.5em){
+  @media screen and (min-width: 600px) {
+    .card__image {
+      height: 55vh;
+    }
+
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
   
-    home-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1em;
+    .card:last-of-type {
+      grid-column: 1/-1;
     }
-    .headerbox {    
-        /* width: 60%; */
-       width: auto;
-        
-    }
-    .nike{
-        grid-column: 1/2;
-    }
-    .google{
-        grid-column: 2/3;
-    }
-    .dstv{
-        grid-column: 1/3;
-    }
-}
+  }
+
+  
