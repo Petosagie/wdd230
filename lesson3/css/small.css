@@ -112,3 +112,24 @@ img {
     background-color: #8e94e3b2;
     color: #161a7c;
   }
+
+  #answer ul, li{
+    text-align: center;
+    
+    
+  }
+
+  #personacard {
+  
+    padding: 10px;
+    margin: 10px auto;
+}
+
+
+  #personacard2 {
+  
+    padding: 10px;
+    margin: 10px auto;
+}
+
+
