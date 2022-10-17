@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Kanit:wght@700&display=swap");
 
 :root {
@@ -19,6 +20,36 @@ h3 {
   font-family: var(--heading-font);
 }
 
+.banner {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 3.4rem;
+  width: 100%;
+  background-color: #6022d9;
+  opacity: 0.8;
+  margin: auto;
+}
+
+.banner-content {
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.handshake {
+  position: absolute;
+  width: 1rem;
+  padding: 0 5px;
+  left: 0;
+}
+
+
 header {
   background: linear-gradient(to left, #1f172a, #45345c);
   display: flex;
@@ -27,6 +58,7 @@ header {
 }
 
 .headingContainer {
+  width: 100%;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -196,15 +228,108 @@ main div {
   background-color: var(--primary-color);
 }
 
-.spotlightContainer {
-  background-color: var(--primary-color);
-  display: flex;
-  justify-content: space-around;
-  padding: 1em;
+
+.hero{
+  position:relative;
+  height: 150px;
+  border: 1px solid#555;
+  text-align: center;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+}
+.welcome {
+  margin-top: -130px;
+  font-size: 1.5rem;
+  padding-left: 15px;
+   
+}
+.button-box {
+  position: absolute;
+  text-align: center;
+  bottom: 25px;
+	right: 50px;
+
+}
+.join1 {
+    background-color: #91ba20;
+    text-decoration: none;
+    color: #252c13;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.join1:hover {
+  background-color: #955f7a;
+  color: #12120ab8;
+}
+.join p{
+  position: relative;
+  text-align: center;
+  bottom: -50px;
+}
+.button-box2 {
+  position: relative;
+  text-align: center;
+  top: 40px;
+ 
+}
+.news{
+  text-align: center;
+  height: 250px;
+  border: 1px solid#555;
 }
 
-.spotlightContainer div {
-  background-color: var(--secondary-color);
+.spotlightContainer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  
+
+}
+div.spotlight1{
+  height: 100px;
+  text-align: center;
+  border: 1px solid rgb(22, 21, 21);
+
+}
+
+div.spotlight2{
+  height: 100px;
+  text-align: center;
+  border: 1px solid rgb(22, 21, 21);
+
+}
+div.spotlight3{
+  display: none;
+  text-align: center;
+
+}
+.join{
+  height: 150px;
+  border: 1px solid#555;
+}  
+
+.event{
+  height: 200px;
+  border: 1px solid#555;
+  text-align: center;
+  
+}
+
+.weather{
+  margin: auto;
+  width: 80%;
+  height: 200px;
+  text-align: center;
+  border: 1px solid#555;
+}
+.weather img{
+  position: relative;
+  top: -10px;
+  width: 80%;
+  
 }
 
 /* FOOTER */
@@ -254,3 +379,8 @@ footer {
   border-top: 1px solid var(--secondary-color);
   margin-top: 1em;
 }
+
+#date {
+  border: none;
+}
+

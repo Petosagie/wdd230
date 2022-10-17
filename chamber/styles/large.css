@@ -1,81 +1,155 @@
 @media only screen and (min-width: 64rem) {
-    .logoContainer img {
-      width: 80px;
-    }
-  
-    .headings h1 {
-      font-size: 2.2rem;
-    }
-  
-    .headings h2 {
-      font-size: 1.8rem;
-    }
-  
-    .menuContainer {
-      flex-flow: row-reverse;
-      justify-content: space-around;
-    }
-  
-    nav button {
-      display: none;
-    }
-  
-    #primaryNav {
-      background-color: transparent;
-      display: flex;
-      flex-direction: row;
-      position: inherit;
-    }
-  
-    #primaryNav li a {
-      margin: 0 1em;
-    }
-  
-    main {
-      grid-template-columns: 1fr 2fr 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      
-    }
-  
-    .hero {
-      grid-area: 1 / 2 / span 2 / 2;
-      /* height: 300px; */
-    }
-  
-    .event {
-      grid-column: 1/1;
-      height: 200px;
-    }
-  
-    .weather {
-      grid-area: 2 / 1 / 2 / 1;
-      height: 200px;
 
-    }
+  .banner-content {
+    width: 40%;
+  }
   
-    .news {
-      grid-area: 3 / 2 / 3 / 2;
+  .handshake {
+    width: 2rem;
+    padding: 0;
+  }
+
+  .logoContainer img {
+    width: 80px;
+  }
+
+  .headings h1 {
+    font-size: 2.2rem;
+  }
+
+  .headings h2 {
+    font-size: 1.8rem;
+  }
+
+  .menuContainer {
+    flex-flow: row-reverse;
+    justify-content: space-around;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  #primaryNav {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    position: inherit;
+  }
+
+  #primaryNav li a {
+    margin: 0 1em;
+  }
+
+  main {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+   
+    
+  }
+
+  .hero {
+    position: relative;
+    grid-area: 1 / 2 / span 2 / 2;
+    
+    height: 420px;
+    text-align: center;
+  }
+.hero-img {
+  width: 100%;
+  height: 100%;
+}
+.welcome {
+  margin-top: -400px;
+  font-size: 2.5rem;
+   
+}
+.button-box {
+  position: relative;
+  text-align: center;
+  bottom: -250px;
+  left: 300px;
+  width: 200px;
+  background: none
+}
+.join1 {
+    background-color: #91ba20;
+    text-decoration: none;
+    color: #252c13;
+    left: 30px;
+}
+.join1:hover {
+  background-color: #955f7a;
+  color: #12120ab8;
+}
+  .event {
+    grid-area: 1 / 1 / span 1 / 1;
+    height: 200px;
+  }
+
+  .weather {
+    margin: 0;
+    grid-area: 2 / 1 / span 2 / 1;
+    height: 200px;
+    width: 100%;
+    
+
+  }
+
+  .join {
+    grid-area: 3 / 1 / span  3/ 1;
+    height: 200px;
+   
+    
+
+  }
+  .join p{
+    position: relative;
+    text-align: center;
+  }
+  .button-box2 {
+    position: relative;
+    text-align: center;
+    top: 40px;
+   
+  }
+  .news {
+    grid-area: 3 / 2 / span 3 / 2;
+    height: 200px;
+   
+  }
+  .news p{
+    text-align: center;
+  }
+
+  .spotlightContainer {
+    flex-direction: column;
+    grid-area: 1 / 3 / span 3/ 3;
+    
+    
+    
+  }
+ 
+    div.spotlight1 {
       height: 200px;
-     
-    }
-  
-    .spotlightContainer {
-      grid-area: 1 / start-line / last-line / 3;
-      flex-direction: column;
+      border: 1px solid rgb(22, 21, 21);
+      width: auto;
       
     }
-    .spotlightContainer div {
+    div.spotlight2 {
+      border: 1px solid rgb(22, 21, 21);
       height: 200px;
-        
-        
-      }
-  
-    .join {
-      grid-area: 3 / 1 / last-line/ 1;
+      width: auto;
+      
+    }
+    div.spotlight3 {
+      display: block;
+      border: 1px solid rgb(22, 21, 21);
       height: 200px;
     }
   
-    .footerContent1Container {
-      margin: 0 2em;
-    }
+
+  .footerContent1Container {
+    margin: 0 2em;
   }
+}
