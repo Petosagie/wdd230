@@ -67,7 +67,7 @@
 .button-box {
   position: relative;
   text-align: center;
-  bottom: -250px;
+  bottom: -230px;
   left: 300px;
   width: 200px;
   background: none
@@ -132,19 +132,19 @@
  
     div.spotlight1 {
       height: 200px;
-      border: 1px solid rgb(22, 21, 21);
+      border: 1px solid rgb(132, 53, 106);
       width: auto;
       
     }
     div.spotlight2 {
-      border: 1px solid rgb(22, 21, 21);
+      border: 1px solid rgb(132, 53, 106);
       height: 200px;
       width: auto;
       
     }
     div.spotlight3 {
       display: block;
-      border: 1px solid rgb(22, 21, 21);
+      border: 1px solid rgb(132, 53, 106);
       height: 200px;
     }
   

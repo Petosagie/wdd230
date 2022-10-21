@@ -25,10 +25,10 @@
           <p><img class="handshake" src="images/handshakeicon.png" alt="handshake icon">Come join us for the chamber meet and greet Wednesday at 7:00 p.m</p>
       </div>
     </div>
-    <header>
+    <header>rsz_2logo.webp
         <div class="headingContainer">
             <div class="logoContainer">
-                <img src="images/logo.png" alt="logo for Benin City chamber of commerce">
+                <img src="images/logo.webp" alt="logo for Benin City chamber of commerce">
                 
 
                 <div class="headings">
@@ -72,7 +72,15 @@
     <main>
         <div class="hero">
             
-            <img class = "hero-img" src="images/benin2.jpg" alt="hero picture for Benin City chamber of commerce">
+            <picture class="hero-img">
+                <source media="(max-width: 300px)" srcset="./images/wdd230-org300.jpg">
+                <source media="(max-width: 500px)" srcset="./images/wdd230-org500.jpg">
+                <img src="./images/wdd230-org800.jpg" alt = "Picture of Benin city chamber of commerce">
+            </picture>
+            <!-- <img class = "hero-img" src="images/wdd230-org" alt = "Picture of Benin city chamber of commerce" size = "100vw"
+            srcset = "images/wdd230-org300.jpg 300w,
+                     images/wdd230-org500.jpg 500w,
+                     images/wdd230-org800.jpg 800w"> -->
             <h1 class = "welcome">Welcome to Benin City</h1>
             <div class='button-box'>
                 <a class='join1' href="#">Join the Chamber</a>
@@ -88,8 +96,15 @@
 
         </div>
         <div class="weather">
-            <p>Weather</p>
-            <img src="images/weather.jpg" alt="weather picture">     
+            <h2>Weather</h2>
+            <img src="images/weather.png" alt="Weather">
+            <h1><span id="temp"></span>°F</h1>
+            <h3>Partly Cloudy</h3>
+            <div id="wind">
+                <p>Wind Speed: <span id="wspeed"></span> mph</p>
+                <p>Wind Chill: <span id="wchill"></span></p>
+            </div>
+            
            
         </div>
         <div class="news">
@@ -131,7 +146,8 @@
     <footer>
         <div class="footerContent1Container">
             <div class="footerContent">
-                <img src="images/logo.png" alt="logo for benin city chamber of commerce">
+                <img src="images/logo.png" alt="Picture of Benin city chamber of commerce">
+               
                 <div>
                     <h3>Benin CIty Chamber of Commerce</h3>
                     <p>2 Ring Road,Benin City, Edo State, Nigeria</p>
@@ -152,8 +168,8 @@
     <div>
         <script src="./scripts/main.js"></script>
         <script src="./scripts/banner.js"></script>
+        <script src="./scripts/windchill.js"></script>
 
-        <!-- <script src="js/scripts.js"></script> -->
     </div>
 
 </body>
