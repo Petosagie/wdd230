@@ -350,12 +350,6 @@ div.spotlight3{
   text-align: center;
   border: 1px solid#555;
 }
-/* .weather img{
-  position: relative;
-  top: -40px;
-  width: 50%;
-  
-}  */
 
 .weather img {
   max-width: 50px;
