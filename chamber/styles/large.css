@@ -66,17 +66,27 @@
 }
 .button-box {
   position: relative;
-  text-align: center;
-  bottom: -230px;
-  left: 300px;
-  width: 200px;
+  top: 220px;
+  left: 160px;
   background: none
-}
-.join1 {
+  }
+
+  .joina {
     background-color: #91ba20;
     text-decoration: none;
     color: #252c13;
-    left: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.join1 {
+  background-color: #91ba20;
+  text-decoration: none;
+  color: #252c13;
+  width: revert;
+  padding-top: 15px;
+
 }
 .join1:hover {
   background-color: #955f7a;
@@ -110,7 +120,7 @@
   .button-box2 {
     position: relative;
     text-align: center;
-    top: 40px;
+    
    
   }
   .news {
