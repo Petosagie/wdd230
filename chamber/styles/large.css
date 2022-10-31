@@ -65,10 +65,9 @@
    
 }
 .button-box {
-  position: relative;
-  top: 220px;
-  left: 160px;
-  background: none
+  position: absolute;
+  top: 320px;
+  right: 20px;
   }
 
   .joina {
@@ -162,4 +161,50 @@
   .footerContent1Container {
     margin: 0 2em;
   }
+  
+  #date {
+    border: none;
+  }
+  .hero1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    border: 1px solid#555;
+  }
+
+  .herodiscover{
+    grid-column: 2/3;
+    border: 1px solid#555;
+    padding: 10px;
+  }
+
+  .event2{
+    grid-column: 1/1;
+    grid-row: 1/1;
+    border: 1px solid#555;
+    padding: 10px;
+  }
+  .lazyloading h2{
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+  .mygallery{
+    grid-column: 1/2;
+  }
+  .mygallery figcaption {
+    background-color: #FFECD1;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    border: thin silver solid;
+  }
+  picture{
+    width:100%;
+  }
+  .shadow:hover {
+    opacity: .6;
+    transform: scale(1.1);
+  }  
+
 }
