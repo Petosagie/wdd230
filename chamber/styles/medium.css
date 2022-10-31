@@ -202,9 +202,7 @@
       font-family: 'Lato', sans-serif;
       border: thin silver solid;
     }
-    picture{
-      width:100%;
-    }
+    
     .shadow:hover {
       opacity: .6;
       transform: scale(1.1);
