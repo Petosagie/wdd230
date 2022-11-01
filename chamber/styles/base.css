@@ -474,7 +474,7 @@ img[data-src] {
 
 .mygallery figcaption {
     background-color: #FFECD1;
-    border: thin silver solid;
+    /* border: thin silver solid; */
     padding: 5px;
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -484,6 +484,11 @@ img[data-src] {
     filter: blur(0px);
     /* transition: filter 0.6s; */
     max-width:100%; 
+}
+
+figure {
+margin: auto;
+padding: 4px;
 }
 .shadow{
   width:100%;
