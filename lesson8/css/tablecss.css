@@ -2,7 +2,7 @@
 	--back: rgb(55, 171, 192);
   --back2: rgba(205, 172, 96, 0.5);
   --foredark: hsla(0,0%,10%,1);
-	--forelight: hsla(0,0%,100%,1);
+	--forelight: #141414;
 	--border: hsl(0,0%,20%);
 	--borderlight: hsl(0,0%,33%);
 	--shadow: hsl(0,0%,50%);
