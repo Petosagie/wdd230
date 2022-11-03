@@ -125,10 +125,15 @@
   .news {
     grid-area: 3 / 2 / span 3 / 2;
     height: 200px;
+    
    
   }
   .news p{
-    text-align: center;
+    text-align: justify;
+    margin: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+
   }
 
   .spotlightContainer {
