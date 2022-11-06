@@ -507,8 +507,118 @@ padding: 4px;
 .header-title {
   color: #18c6f1;
 }
-
+/*------- Thankyou --------=== */
 .thankyou{
   background-color: #54768a;
   text-align: center;
+}
+
+/* ---------  Join Form ---------  */
+form fieldset {
+  margin: 5px;
+  border: 2px dashed rgba(0, 0, 0, 0.20);
+  padding: 10px;
+}
+
+form legend{
+  color: rgba(0, 0, 0, 0.80);
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 1rem;
+}
+
+form label.contact, form label.company, form div {
+  display: block;
+  padding-top: 1rem;
+  color: rgba(0, 0, 0, 0.80);
+  font-size: .9rem;
+  text-align: left;
+}
+
+form label.contact input, form label.contact select, form label.company input, form label.company select{
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 3px;
+  padding: .75rem;
+  color: rgba(0, 0, 0, 0.80);
+  width: 87%;
+  max-width: 20rem;
+  background-color: rgba(255, 255, 255, 0.223);
+
+}
+
+
+
+form input.submitBtn {
+  font-size: 1em;
+  border: none;
+  background-color:  #fee573;
+  color: black;
+  border-radius: 5px;
+  padding: .75rem 1.5rem;
+  margin: 2%;
+  width: 96%;
+  max-width: 20rem;
+  border: 1px solid rgba(0, 0, 0, 0.60)
+}
+
+form label.contact input:required, form label.company input:required { /*left bar on required input forms - requirements not met*/
+border-left: rgb(255, 204, 0, .3) solid 6px;
+}
+
+form label.contact input:required:valid, form label.company input:required:valid { /*left bar on required input forms - requirements met*/
+  border-left: rgb(0, 0, 0, .3) solid 6px;
+}
+
+form label.memberLevel {
+  display: block;
+  text-align: left;
+  padding: 1rem 0;
+  color: #555;
+  font-size: 1rem;
+
+}
+
+input[type='radio'] {
+  transform: scale(1.5);
+  accent-color: #ffd000;
+  }
+
+section.testimonials {
+  display: none;
+}    
+
+  /* ---------  Membership Table ---------  */
+th, td {
+  border: 1px solid black;
+  padding: 10px 3px 10px 3px;
+  font-size: 1em;   
+}
+th {
+  background-color: #fee573;
+}
+
+table {
+  width: 100%;
+  background-color:rgba(255, 234, 7, 0.1);
+  border-collapse: collapse;
+
+}
+tbody tr:nth-child(odd) {
+background-color: rgba(255, 234, 7, 0.1) ;
+}
+table td:nth-child(1) {
+  text-align: left;
+  padding: 10px;
+  width: 30px;
+}
+
+table th:nth-child(2), table th:nth-child(3), table th:nth-child(4), table th:nth-child(5) {
+ max-width: 10px;
+
+}
+section.thankyou {
+grid-column: 1/7;
+background-color: #fee57370;
 }
