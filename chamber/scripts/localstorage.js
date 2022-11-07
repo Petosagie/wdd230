@@ -18,4 +18,19 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 // show todays date.
-todayDisplay.textContent = (Date.now()/500/60/60/24).toFixed(0);
+
+
+
+let lastVisit = window.localStorage.getItem("visits-lv");
+lastVisit = new Date(lastVisit);
+let newVisit = new Date();
+
+// To calculate the time difference of two dates
+let Difference_In_Time = newVisit.getTime() - lastVisit.getTime() ;
+
+// To calculate the no. of days between two dates
+todayDisplay.textContent = (Difference_In_Time / (1000 * 3600 * 24)).toFixed(0);
+lastVisit = new Date();
+localStorage.setItem("visits-lv", lastVisit);
+
+
