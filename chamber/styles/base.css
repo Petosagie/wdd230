@@ -509,9 +509,14 @@ padding: 4px;
 }
 /*------- Thankyou --------=== */
 .thankyou{
-  background-color: #54768a;
+  background-color: #7973bdcc;
   text-align: center;
-}
+  padding: 30px;
+  }
+  .thankyou p{
+    font-size: 1.5rem;
+   
+  }
 
 /* ---------  Join Form ---------  */
 form fieldset {
