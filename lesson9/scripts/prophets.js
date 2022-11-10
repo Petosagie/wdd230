@@ -1,44 +1,66 @@
 const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const cards = document.querySelector('.cards');
 
 
 fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        //console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const prophets = jsonObject['prophets'];
-        for (let i = 0; i < prophets.length; i++) { //for loop
-            //these are the variables needed
-            let card = document.createElement('section'); //this was the example
-            let h2 = document.createElement('h2'); //this was the example
-            // I created these ones:
-            let p = document.createElement('p'); //paragraphs 
-            let image = document.createElement('img'); //images
-            let birthDate = document.createElement('date'); //birth date
-            let birthPlace = document.createElement('place'); //birth place
-           
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const prophets = jsonObject['prophets'];
+    prophets.forEach(displayProphets);
+});
+
+function displayProphets(prophet) {
+    // Create elements to add to the document
+    let card = document.createElement('section');
+    let prophetName = document.createElement('h2');
+    let portrait = document.createElement('img');
+    let portraitCaption = document.createElement('p');
+    let birth = document.createElement('h3');
+  
+    let caption = `Portrait of ${prophet.name} ${prophet.lastname}, ${prophet.order}${getOrdinal(prophet.order)} Latter-day President`;
+
+    // Change the textContent property of the h2 element to contain the prophet's full name
+    prophetName.textContent = `${prophet.name} ${prophet.lastname}`;
+
+  
+    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    portrait.setAttribute('src', prophet.imageurl);
+    portrait.setAttribute('alt', caption);
+    portrait.setAttribute('loading', 'lazy');
+    
+    portraitCaption.textContent = caption;
+    portraitCaption.classList.add('caption')
+
+    birth.textContent = `Born ${prophet.birthdate} in ${prophet.birthplace}`;
 
 
-            // this is how to fill each one of the elements, this is what it will show on top on my image on the page.
-            // It also shows the order in which everything appears.
-            h2.textContent = prophets[i].name + ' ' + prophets[i].lastname; //this is the example text
-            birthDate.textContent = "Date of Birth: " + prophets[i].birthdate; // I created the following ones
-            birthPlace.textContent = "Place of Birth: " + prophets[i].birthplace;
-            
-            
-            //this is how to append the element to the card and paragraph
-            card.appendChild(h2);
-            card.appendChild(p);
-            p.appendChild(birthDate);//here these ones are connected to the paragraphs instead than to the card. 
-            p.appendChild(birthPlace);
-            card.appendChild(image);
+    // Add/append the section(card) with the h2 element
+    card.appendChild(prophetName);
+    card.appendChild(portrait);
+    card.appendChild(portraitCaption);
+    card.appendChild(birth);
+    
+  
+    // Add/append the existing HTML div with the cards class with the section(card)
+    document.querySelector('div.cards').appendChild(card);
+}
 
-            //images
-            image.setAttribute('src', prophets[i].imageurl);
-            image.setAttribute('alt', prophets[i].name + prophets[i].lastname + ' ' + prophets[i].order); 
 
-            document.querySelector('div.cards').appendChild(card);
-        }
-
-    });
+function getOrdinal(value) {
+    var s = String(value),
+    len = s.length,
+    end  = s.substring(len - 1, 1),
+    teen = len > 1 && s.substring(len - 2, 1) === "1",
+    ord = "th";
+  if (end === "1" && !teen) {
+    ord = "st";
+  } else if (end === "2" && !teen) {
+    ord = "nd";
+  } else if (end === "3" && !teen) {
+    ord = "rd";
+  }
+  return ord;
+}
