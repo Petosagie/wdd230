@@ -1,8 +1,26 @@
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+
+gridbutton.addEventListener("click", () => {
+  // example using arrow function
+  display.classList.add("grid");
+  display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+  display.classList.add("list");
+  display.classList.remove("grid");
+}
+
 
 const requestURL = 'https://petosagie.github.io/wdd230/chamber/data.json';
 const cards = document.querySelector('.cards');
 
-fetch(requestURL1)
+fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
