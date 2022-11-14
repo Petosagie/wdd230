@@ -629,3 +629,63 @@ section.thankyou {
 grid-column: 1/7;
 background-color: #fee57370;
 }
+
+/* css for directory page */
+main .listgrid {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 100%;
+	font-family: "Nixie-One", cursive;
+}
+
+.menudirectory {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.menudirectory button {
+	padding: 1rem;
+}
+
+article,
+section {
+	margin: 0.75rem;
+}
+
+.cards section {
+	padding: 0.5rem;
+	background-color: #FFBC00;
+}
+
+.grid {
+	display: grid;
+  grid-template-columns:1fr;
+  max-width: 100%;
+  gap: 20px;
+  margin: 20px;
+  grid-template-rows: 9fr;
+  padding: 1em;
+}
+
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section a {
+	font-family: "Nixie-One", Arial, sans-serif;
+	font-size: 0.9rem;
+}
+ 
+/* End of css for discovery page  */

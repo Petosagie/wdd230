@@ -209,6 +209,33 @@
     transform: scale(1.1);
   }  
  
+  /* css for discovery page */
+  .list section {
+    flex-direction: row;
+    justify-content: left;
+    height: 150px;
+  }
   
+  .list section > * {
+    margin: 0 1rem;
+    text-align: left;
+  }
+  
+  .list section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));  
+    grid-template-rows: repeat(auto-fill,minmax(50px, 1fr));
+  }
+
+  /* end of css for discovery page */
 
 }
