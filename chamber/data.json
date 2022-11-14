@@ -1,0 +1,93 @@
+{"companies":  
+[
+    {
+        "companyName": "Garnavillo Historical Society",
+        "url": "http://garnavillohistoricalsociety.org/",
+        "logo-original": "https://lh3.googleusercontent.com/a-/ACNPEu-zzZwrV84Z5jKUA18ZP8N_BkFXqbGJnOgQWYQQ=w200-h200-p-rp-mo-br100",
+        "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
+        "address1": "203 North Washington Street",
+        "address2": "Garnavillo, IA 52049",
+        "phone": "563-880-5078",
+        "chamberMemberType": "NP" 
+    },
+    {
+        "companyName": "Water Meter Market",
+        "url": "https://watermetermarket.com/",
+        "logo-original": "https://i0.wp.com/watermetermarket.com/wp-content/uploads/2022/06/water-meter-market-logo.jpg?fit=1234%2C1261&ssl=1",
+        "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/water-meter-market.webp",
+        "address1": "405 E Washington St",
+        "address2": "Iowa City, IA 52240",
+        "phone": "520-234-7310",
+        "chamberMemberType": "gold" 
+    },
+    {
+        "companyName": "Field of Dreams Movie Site",
+        "url": "https://www.fieldofdreamsmoviesite.com/",
+        "logo-original": "https://scontent.ffod1-1.fna.fbcdn.net/v/t39.30808-6/289620330_138891352087817_5029756418550338988_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=U08ToDsgGzUAX_svFIF&_nc_ht=scontent.ffod1-1.fna&oh=00_AfBCuGKYaxMM3SyBJPA8x3yi41sOJis7LIIvCJuZsYcfaA&oe=6372DDEE",
+        "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/field-of-dreams-movie-site.webp",
+        "address1": "28995 Lansing Rd",
+        "address2": "Dyersville, IA",
+        "phone": "(563) 875-8404",
+        "chamberMemberType": "silver" 
+    },
+    {
+        "companyName": "Great River Maple",
+        "url": "https://greatrivermaple.com/",
+        "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/great-river-maple.webp",
+        "address1": "217 Clay Brick Lane",
+        "address2": "Garnavillo, Iowa 52049",
+        "phone": "(319)830-5882",
+        "chamberMemberType": "gold" 
+    },
+    {
+        "companyName": "Thomas Dairy Bar",
+        "url": "https://www.claytoncountyiowa.com/",
+        "logo-original": "https://www.yelp.com/biz_photos/thoma-dairy-bar-cafe-garnavillo?select=PoH3J794R3tKY9B7UQ84Wg",
+        "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/thomas-dairy-bar1.webp",
+        "address1": "103 N Main Street",
+        "address2": "Garnavillo, IA 52049",
+        "phone": "563-964-2212",
+        "chamberMemberType": "silver" 
+    },
+    {
+        "companyName": "Clayton Ridge School District",
+        "url": "https://www.claytonridge.k12.ia.us",
+        "logo-original": "https://www.claytonridgeschools.com/wp-content/uploads/2022/02/800-Clayton-Ridge-Logo.png",
+        "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/clayton-ridge-school.webp",
+        "address1": "131 South River Park Dr.",
+        "address2": "Guttenberg, Iowa 52052",
+        "phone": "563-252-2341",
+        "chamberMemberType": "NP" 
+    },
+    {
+        "companyName": "Guttenberg Motel",
+        "url": "https://guttenbergmotel.com/",
+        "logo-original": "https://guttenbergmotel.com/wp-content/uploads/2021/05/logo.png",
+        "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/guttenberg-motel1.webp",
+        "address1": "927 US-52",
+        "address2": "Guttenberg, IA 52052",
+        "phone": "563-252-1433",
+        "chamberMemberType": "silver" 
+    },
+    {
+        "companyName": "Guttenberg Industries",
+        "url": "https://www.guttenbergindustries.com/",
+        "logo-original": "https://www.guttenbergindustries.com/wp-content/uploads/2016/08/gb_logo@2x-1.png",
+        "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/guttenberg-industries1.webp",
+        "address1": "603 S. Lincoln St.",
+        "address2": "Garnavillo, IA 52049",
+        "phone": "(563) 964-1000",
+        "chamberMemberType": "bronze" 
+    },
+    {
+        "companyName": "Luana Bank",
+        "url": "https://luanasavingsbank.com/",
+        "logo-original": "https://www.claytoncountyiowa.com/business/luana-savings-bank",
+        "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/luana-bank1.webp",
+        "address1": "100 Harvest Dr.",
+        "address2": "Luana, IA 52156",
+        "phone": "(563) 539 - 2166",
+        "chamberMemberType": "bronze" 
+    }
+   
+]}
