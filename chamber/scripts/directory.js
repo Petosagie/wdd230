@@ -1,83 +1,92 @@
-if (URL == 'directory.html') {
+const div = document.querySelector('.directory-buttons');
+const cardsButton = document.getElementById('card-button');
+const listButton = document.getElementById('list-button');
+const cards = document.getElementById('cards');
+const list = document.getElementById('list');
+
+cardsButton.addEventListener('click', () => {
+    list.classList.add('hidden');
+    cards.classList.remove('hidden');
+}, false);
+
+listButton.addEventListener('click', () => {
+    cards.classList.add('hidden');
+    list.classList.remove('hidden');
+}, false);
+
+if (window.innerWidth >= 520 && window.innerWidth <= 1120) {
+    cards.classList.add('hidden');
+    list.classList.remove('hidden');
+};
+
+
+
 
   const requestURL = 'https://petosagie.github.io/wdd230/chamber/data.json';
-  const cards = document.querySelector('.cards');
-  
-  
-  fetch(requestURL)
+
+//Fetch the JSON file
+fetch(requestURL)
     .then(function (response) {
-      return response.json();
+        return response.json();
     })
-    .then(function (jsonObject) {
-      const members = jsonObject['data'];
-      members.forEach(displayMembers);
-  });
+    .then(function(jsonObject) {
+        const cardsAndList = jsonObject['directory'];
 
-  gridButton = document.getElementById("grid");
-  listButton = document.getElementById("list");
-  display = document.getElementById("member-data")
+        cardsAndList.forEach(displayCards);
+        cardsAndList.forEach(displayList);
+    });
 
-  gridButton.addEventListener("click", () => {
-      // example using arrow function
-      display.classList.add("member-grid");
-      display.classList.remove("member-list");
-  });
-
-  listButton.addEventListener("click", () => {
-      // example using arrow function
-      display.classList.remove("member-grid");
-      display.classList.add("member-list");
-  });
-
-
+function displayCards(card) {
+    //Create elements to add to the document
+    let section = document.createElement('section');
+    let portrait = document.createElement('img');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p');
+    let a = document.createElement('a');
+    
+    //Add text content to the directory cards
+    p1.textContent = `${card.address}`;
+    p2.textContent = `${card.phonenumber}`;
+    a.textContent = `${card.website}`;
+    
+    //Build image attributes by using setAttribute method for src, alt, and loading attribute values.
+    portrait.setAttribute('src', card.logo);
+    portrait.setAttribute('alt', `Logo for ${card.name}`);
+    portrait.setAttribute('loading', 'lazy');
+    a.setAttribute('href', card.website);
+    
+    //Add/append the h2 and image to the section(card)
+    section.appendChild(portrait);
+    section.appendChild(p1);
+    section.appendChild(p2);
+    section.appendChild(a);
+        
+    
+    //Add/append the section(card) to the div with the card class
+    document.querySelector('#cards').appendChild(section);
 }
 
-function displayMembers(member) {
-  // Create elements to add to the document
-  let card = document.createElement('section');
-  let memberName = document.createElement('h2');
-  let memberLogo = document.createElement('img');
-  let memberAddress = document.createElement('p');
-  let memberPhone = document.createElement('a');
-  let memberURL = document.createElement('a');
-  let memberEmail = document.createElement('a');
+function displayList(list) {
+    //Create elements to add to the document
+    let section = document.createElement('section');
+    let h4 = document.createElement('h4');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p');
+    let a = document.createElement('a');
+    
+    //Add text content to the directory cards
+    h4.textContent = `${list.name}`;
+    p1.textContent = `${list.address}`;
+    p2.textContent = `${list.phonenumber}`;
+    a.textContent = `${list.website}`;
+    a.setAttribute('href', list.website);
+    
+    //Add/append the h2 and image to the section(card)
+    section.appendChild(h4);
+    section.appendChild(p1);
+    section.appendChild(p2);
+    section.appendChild(a);
 
-
-  // Change the textContent property of the h2 element to contain the prophet's full name
-  memberName.textContent = member.name;
-
-  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-  memberLogo.setAttribute('src', member.image_url);
-  memberLogo.setAttribute('alt', `logo for ${memberName}`);
-  memberLogo.width = 100;
-  memberLogo.height = 100;
-  if (member.index > 3) {
-  memberLogo.setAttribute('loading', 'lazy');
-  }
-
-  memberAddress.innerHTML = member.address1;
-  memberAddress.classList.add('member-address')
-
-  memberPhone.innerHTML = `${member.phone}`;
-  memberPhone.href = `tel:${member.phone}`
-
-  memberURL.textContent = 'Visit website';
-  memberURL.href = member.url;
-
-  memberEmail.href = `mailto:${member.email}`;
-  memberEmail.textContent = member.email;
-  memberEmail.classList.add('member-email')
-
-  // Add/append the section(card) with the h2 element
-  card.appendChild(memberName);
-  card.appendChild(memberLogo);
-  card.appendChild(memberAddress);
-  card.appendChild(memberPhone);
-  card.appendChild(memberURL);
-  card.appendChild(memberEmail);
-  
-  // Add/append the existing HTML div with the cards class with the section(card)
-  card.classList.add('member-detail-grid')
-  document.querySelector('div.cards').appendChild(card);
-
+     //Add/append the section(card) to the div with the card class
+     document.querySelector('#list').appendChild(section);
 }

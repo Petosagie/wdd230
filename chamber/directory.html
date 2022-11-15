@@ -67,7 +67,7 @@
                                 <a href="#"> Contact </a>
                             </li>
                         </ul>
-                        
+
                     </nav>
                 </div>
             </div>
@@ -75,17 +75,16 @@
 
             </div>
         </header>
-        
+
         <!-- CONTENT HERE -->
         <main>
-            <div class="main-div directory-button-bar">
-                <button class="directory-button" id="grid">
-                    <img src="images/card-view.svg" height="48" width="48">
-                </button>
-                <button class="directory-button" id="list">
-                    <img src="images/list-view.svg" height="48" width="48">
-                </button>
+            <h3>Business Directory</h3>
+            <div class="directory-buttons">
+                <button id="card-button">&#9871; Cards</button>
+                <button id="list-button">&#9868; List</button>
             </div>
+            <div id="cards"></div>
+            <div id="list" class="hidden"></div>
             <div class="cards member-grid" id="member-data"></div>
         </main>
         <!-- FOOTER HERE -->
@@ -114,13 +113,12 @@
         <div>
             <script src="./scripts/main.js"></script>
             <script src="./scripts/banner.js"></script>
-            <script src="./scripts/lazyload.js"></script>
-            <script src="./scripts/directory.js"></script>
+           <script src="./scripts/directory.js"></script>
 
 
         </div>
 
-       
+
     </div>
 </body>
 
