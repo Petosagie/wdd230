@@ -708,4 +708,9 @@ div#list section:nth-child(odd) {
 #cards.hidden, #list.hidden {
   display: none;
 }
+main h3 {
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+}
 /* End of css for discovery page  */
