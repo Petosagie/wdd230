@@ -711,7 +711,7 @@ div#list section:nth-child(even) {
 #cards.hidden, #list.hidden {
   display: none;
 }
-main h3 {
+main h3, p {
   color: black;
   font-size: 4rem;
   text-align: center;
