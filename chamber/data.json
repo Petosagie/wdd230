@@ -31,7 +31,7 @@
                   "email": "USA5152@FEDEX.COM",
                   "business_type": "SHIPPING AND MAILING SERVICE",
                   "url": "https://local.fedex.com/en-us/wa/redmond/office-5152",
-                  "image_url": "images/members/fedex_250.png",
+                  "image_url": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
                   "membership_level": "silver"
                 },
                 {
@@ -42,7 +42,7 @@
                   "email": "help@kindercare.com",
                   "business_type": "PRESCHOOL",
                   "url": "https://www.kindercare.com/our-centers/redmond/wa/301240",
-                  "image_url": "images/members/kindercare_250.webp",
+                  "image_url": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
                   "membership_level": "silver"
                 },
                 {
@@ -53,7 +53,7 @@
                   "email": "help@attredmond.com",
                   "business_type": "CELL PHONE STORE",
                   "url": "https://www.att.com/stores/washington/redmond/674?source=E-lls10000000000X",
-                  "image_url": "images/members/att_250.webp",
+                  "image_url": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
                   "membership_level": "gold"
                 },
                 {
@@ -64,7 +64,7 @@
                   "email": "help@fredmeyer70100664.com",
                   "business_type": "RETAIL",
                   "url": "https://www.fredmeyer.com/stores/grocery/wa/redmond/redmond/701/00664",
-                  "image_url": "images/members/fredmeyer_250.jpg",
+                  "image_url": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
                   "membership_level": "gold"
                 },
                 {
@@ -75,7 +75,7 @@
                   "email": "help@riteaidredmond.com",
                   "business_type": "PHARMACY",
                   "url": "https://www.riteaid.com/locations/wa/redmond/17220-redmond-way-northeast.html",
-                  "image_url": "images/members/riteaid_250.jpg",
+                  "image_url": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
                   "membership_level": "gold"
                 },
                 {
@@ -86,7 +86,7 @@
                   "email": "help@notary-seattle.com",
                   "business_type": "NOTARY PUBLIC",
                   "url": "https://notary-seattle.com/",
-                  "image_url": "images/members/mobilenotary_250.webp",
+                  "image_url": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
                   "membership_level": "bronze"
                 },
                 {
@@ -97,7 +97,7 @@
                   "email": "help@aloftredmond.com",
                   "business_type": "HOTEL",
                   "url": "https://www.marriott.com/en-us/hotels/seaad-aloft-seattle-redmond/overview/",
-                  "image_url": "images/members/aloft.webp",
+                  "image_url": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
                   "membership_level": "gold"
                 },
                 {
@@ -108,7 +108,7 @@
                   "email": "info@orbitlawpllc.com",
                   "business_type": "IMMIGRATION ATTORNEY",
                   "url": "https://www.orbitlawpllc.com/",
-                  "image_url": "images/members/orbitlaw.webp",
+                  "image_url": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
                   "membership_level": "silver"
                 },
                 {
@@ -119,7 +119,7 @@
                   "email": "help@mariottsredmond.com",
                   "business_type": "HOTEL",
                   "url": " https://www.marriott.com/en-us/hotels/seamc-seattle-marriott-redmond/overview",
-                  "image_url": "images/members/marriott.webp",
+                  "image_url": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
                   "membership_level": "gold"
                 }
               ]
