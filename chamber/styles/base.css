@@ -686,6 +686,7 @@ div#cards section img {
 div#cards section a {
   overflow-wrap: break-word;
   font-weight: bold;
+  color: #1f172a;
 }
 
 div#list section {
@@ -711,7 +712,7 @@ div#list section:nth-child(even) {
 #cards.hidden, #list.hidden {
   display: none;
 }
-main h3, p {
+main h3 {
   color: black;
   font-size: 4rem;
   text-align: center;
