@@ -1,9 +1,9 @@
 {
     "directory" : [
         {
-            "name": "The Shoe Shoppe",
-            "address": "5411 64 Ave, Taber, AB T1G 2A1",
-            "phonenumber": "(403) 223-5641",
+            "name": "First Bank of Nigeria",
+            "address": "53 Akpakpava Road, Benin City",
+            "phonenumber": "08030564832",
             "website": "httsp://theshoeshoppe.com",
             "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "membership": "np"
@@ -11,15 +11,15 @@
         {
             "name": "Taber Animal Clinic",
             "address": "6212 54 Ave, Taber, AB T1G 1X3",
-            "phonenumber": "(403) 223-2534",
+            "phonenumber": "080305648355",
             "website": "httsp://taberanimalclinic.com",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
+            "logo": "https://petosagie.github.io/wdd230/images/bank.jpg",
             "membership": "np"
         },
         {
             "name": "Rumors Hair & Tanning Salon",
             "address": "5104 49 Ave, Taber, AB T1G 1P2",
-            "phonenumber": "(403) 223-6279",
+            "phonenumber": "08030564832",
             "website": "httsp://rumorshair&tanningsalon.com",
             "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "membership": "np"
