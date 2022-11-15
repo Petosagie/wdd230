@@ -5,7 +5,7 @@
             "address": "5411 64 Ave, Taber, AB T1G 2A1",
             "phonenumber": "(403) 223-5641",
             "website": "httsp://theshoeshoppe.com",
-            "logo": "images/shoes.png",
+            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "membership": "np"
         },
         {
@@ -13,7 +13,7 @@
             "address": "6212 54 Ave, Taber, AB T1G 1X3",
             "phonenumber": "(403) 223-2534",
             "website": "httsp://taberanimalclinic.com",
-            "logo": "images/cat.png",
+            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "membership": "np"
         },
         {
@@ -21,7 +21,7 @@
             "address": "5104 49 Ave, Taber, AB T1G 1P2",
             "phonenumber": "(403) 223-6279",
             "website": "httsp://rumorshair&tanningsalon.com",
-            "logo": "images/haircutting.png",
+            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "membership": "np"
         },
         {
@@ -29,7 +29,7 @@
             "address": "5307 48 Ave, Taber, AB T1G 1S7",
             "phonenumber":"(403) 416-0055",
             "website": "https://www.facebook.com/MoonliteGraphicsTaber2016/",
-            "logo": "images/moonlightlogo.jpg",
+            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "membership": "gold"
         },
         {
@@ -37,7 +37,7 @@
             "address": "4822 53 St, Taber, AB T!G 1W4",
             "phonenumber": "(403) 223-2266",
             "website": "https://tabertimes.com/",
-            "logo": "images/tabertimeslogo.jpg",
+            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "membership": "np"
         },
         {
@@ -53,14 +53,14 @@
             "address": "5800 50th Ave, Taber, AB T1G 0A2",
             "phonenumber": "(403) 223-1122",
             "website": "https://www.homehardware.ca/",
-            "logo": "images/homehardwarelogo.jpg",
+            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "membership": "bronze"
         },
         {
             "name": "Cooper Equipment Rentals",
             "address": "6003D 60 Ave, Taber, AB T1G 2C1",
             "phonenumber":"(403) 223-4577",
-            "website": "https://cooperequipment.ca/",
+            "website": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "logo": "images/cooperlogo.jpg",
             "membership": "gold"
         },
@@ -68,7 +68,7 @@
             "name": "1st Choice Savings & Credit Union Ltd",
             "address": "5227 48 Ave, Taber, AB T1G 1S8",
             "phonenumber":"(403) 223-5300",
-            "website": "https://www.1stchoicesavings.ca/en/personal",
+            "website": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "logo": "images/1stchoicelogo.jpg",
             "membership": "bronze"
         },
@@ -76,7 +76,7 @@
             "name": "ATB Financial",
             "address": "5317 48 Ave, Taber, AB T1G 1S7",
             "phonenumber":"(403) 223-6888",
-            "website": "https://www.atb.com/personal/",
+            "website": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "logo": "images/atblogo.jpg",
             "membership": "bronze"
         },
@@ -125,7 +125,7 @@
             "address": "5112 48 Ave, Taber, AB T1G 1R9",
             "phonenumber":"(403) 223-0672",
             "website": "https://west.iga.ca/",
-            "logo": "https://west.iga.ca/wp-content/uploads/2021/02/IGA-logo.svg",
+            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
             "membership": "np"
         },
         {

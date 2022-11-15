@@ -206,6 +206,20 @@
       opacity: .6;
       transform: scale(1.1);
     }
-   
+   /* Directory Page */
+
+   div#cards {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+  div#list section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    overflow: hidden;
+}
     
   }

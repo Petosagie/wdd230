@@ -699,12 +699,15 @@ div#list section p, div#list section a {
   padding: 0.5rem;
   font-weight: bold;
   overflow-wrap: break-word;
+  color: black;
 }
 
 div#list section:nth-child(odd) {
   background-color: #BEC5AD;
 }
-
+div#list section:nth-child(even) {
+  background-color: #5a8a89;
+}
 #cards.hidden, #list.hidden {
   display: none;
 }
