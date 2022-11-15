@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <!-- <div class="containerthank"> -->
+    <div class="containerthank">
         <div class="banner">
             <div class="banner-content">
                 <p><img class="handshake" src="images/handshakeicon.png" alt="handshake icon">Come join us for the
@@ -67,7 +67,7 @@
                                 <a href="#"> Contact </a>
                             </li>
                         </ul>
-                        </button>
+                        
                     </nav>
                 </div>
             </div>
@@ -75,19 +75,18 @@
 
             </div>
         </header>
-
-
-
-
-
+        
         <!-- CONTENT HERE -->
-        <main class="listgrid">
-            <div class="menudirectory">
-                <button id="grid">Grid</button>
-                <button id="list">List</button>
+        <main>
+            <div class="main-div directory-button-bar">
+                <button class="directory-button" id="grid">
+                    <img src="images/card-view.svg" height="48" width="48">
+                </button>
+                <button class="directory-button" id="list">
+                    <img src="images/list-view.svg" height="48" width="48">
+                </button>
             </div>
-            <article class="grid cards">
-            </article>
+            <div class="cards member-grid" id="member-data"></div>
         </main>
         <!-- FOOTER HERE -->
         <footer>
@@ -121,8 +120,8 @@
 
         </div>
 
-        </main>
-    <!-- </div> -->
+       
+    </div>
 </body>
 
 </html>
