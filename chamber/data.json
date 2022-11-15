@@ -41,11 +41,11 @@
             "membership": "np"
         },
         {
-            "name": "VHL Construction",
-            "address": "Box 4779, Taber, AB T1G 2E1",
+            "name": "Prestige Hotel and Suits",
+            "address": "25 Ikpkpan Road, Benin City",
             "phonenumber": "071748456832",
-            "website": "https://vhlconstruction.ca/",
-            "logo": "https://vhlconstruction.ca/wp-content/uploads/2018/12/white-logo-2.png",
+            "website": "https://prestigehotel.com",
+            "logo": "https://petosagie.github.io/wdd230/images/hotel2.jpg",
             "membership": "silver"
         },
         {
@@ -94,7 +94,7 @@
             "address": "30 Boundary Road, GRA, Benin City",
             "phonenumber":"080436744556",
             "website": "https://randekihotel.com",
-            "logo": "https://petosagie.github.io/wdd230/images/hotel.jpg",
+            "logo": "https://petosagie.github.io/wdd230/images/hotel1.jpg",
             "membership": "np"
         }
     ]
