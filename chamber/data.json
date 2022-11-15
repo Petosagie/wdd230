@@ -9,131 +9,92 @@
             "membership": "np"
         },
         {
-            "name": "Taber Animal Clinic",
-            "address": "6212 54 Ave, Taber, AB T1G 1X3",
+            "name": "Kada Cinema",
+            "address": "111 Old Sapele Rd, Oka 300102, Benin City",
             "phonenumber": "080305648355",
-            "website": "httsp://taberanimalclinic.com",
-            "logo": "https://petosagie.github.io/wdd230/images/bank.jpg",
+            "website": "https://www.kadacinemas.com",
+            "logo": "https://petosagie.github.io/wdd230/images/cinema.jpg",
             "membership": "np"
         },
         {
-            "name": "Rumors Hair & Tanning Salon",
-            "address": "5104 49 Ave, Taber, AB T1G 1P2",
-            "phonenumber": "08030564832",
-            "website": "httsp://rumorshair&tanningsalon.com",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
+            "name": "Fine Girl",
+            "address": "53 Oba Market shopping Plaza, Ring Road",
+            "phonenumber": "080305456832",
+            "website": "httsp://finegirl.com",
+            "logo": "https://petosagie.github.io/wdd230/images/clothesshop.jpg",
             "membership": "np"
         },
         {
-            "name": "Moonlite Graphics",
-            "address": "5307 48 Ave, Taber, AB T1G 1S7",
-            "phonenumber":"(403) 416-0055",
-            "website": "https://www.facebook.com/MoonliteGraphicsTaber2016/",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
+            "name": "IO Farm",
+            "address": "KM 50 Ugbowo Lagos Road, Benin City",
+            "phonenumber":"090305456832",
+            "website": "https://www.iofarms.com",
+            "logo": "https://petosagie.github.io/wdd230/images/farm.jpg",
             "membership": "gold"
         },
         {
-            "name": "The Taber Times",
-            "address": "4822 53 St, Taber, AB T!G 1W4",
-            "phonenumber": "(403) 223-2266",
-            "website": "https://tabertimes.com/",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
+            "name": "Big Mummy Grocery Store",
+            "address": " T!4822 53 St, Mission Road",
+            "phonenumber": "071535456832",
+            "website": "https://bigmummys.com/",
+            "logo": "https://petosagie.github.io/wdd230/images/groccery.jpg",
             "membership": "np"
         },
         {
             "name": "VHL Construction",
             "address": "Box 4779, Taber, AB T1G 2E1",
-            "phonenumber": "(403) 223-9411",
+            "phonenumber": "071748456832",
             "website": "https://vhlconstruction.ca/",
             "logo": "https://vhlconstruction.ca/wp-content/uploads/2018/12/white-logo-2.png",
             "membership": "silver"
         },
         {
-            "name": "Taber Home Hardware",
-            "address": "5800 50th Ave, Taber, AB T1G 0A2",
-            "phonenumber": "(403) 223-1122",
-            "website": "https://www.homehardware.ca/",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
+            "name": "Ta Poultry farm",
+            "address": "Km 30 sapele road, Benin City",
+            "phonenumber": "080305446832",
+            "website": "https://www.mypoultry",
+            "logo": "https://petosagie.github.io/wdd230/images/poultry.jpg",
             "membership": "bronze"
         },
         {
-            "name": "Cooper Equipment Rentals",
-            "address": "6003D 60 Ave, Taber, AB T1G 2C1",
-            "phonenumber":"(403) 223-4577",
-            "website": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
-            "logo": "images/cooperlogo.jpg",
+            "name": "Gabus International School",
+            "address": "47 Technical Schoool Road, Benin City ",
+            "phonenumber":"090605456832",
+            "website": "https://gabusis.com",
+            "logo": "https://petosagie.github.io/wdd230/images/school.jpg",
             "membership": "gold"
         },
         {
-            "name": "1st Choice Savings & Credit Union Ltd",
-            "address": "5227 48 Ave, Taber, AB T1G 1S8",
-            "phonenumber":"(403) 223-5300",
-            "website": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
-            "logo": "images/1stchoicelogo.jpg",
+            "name": "Ogba Zoo",
+            "address": "300 Airport Road, Benin City",
+            "phonenumber":"080305454632",
+            "website": "https://ogazoo.com",
+            "logo": "https://petosagie.github.io/wdd230/images/zoo.jpg",
             "membership": "bronze"
         },
         {
-            "name": "ATB Financial",
-            "address": "5317 48 Ave, Taber, AB T1G 1S7",
-            "phonenumber":"(403) 223-6888",
-            "website": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
-            "logo": "images/atblogo.jpg",
+            "name": "Samuel Ogemudia Stadium",
+            "address": "30 Stadium road, Ekenwan, Benin City",
+            "phonenumber":"071305456832",
+            "website": "https://samuelogbe.com",
+            "logo": "https://petosagie.github.io/wdd230/images/stadium.jpg",
             "membership": "bronze"
         },
         {
-            "name": "RBC Royal Bank",
-            "address": "4818 53 St, Taber, AB T1G 1W4",
-            "phonenumber":"(403) 223-5647",
-            "website": "https://www.rbcroyalbank.com/personal.html",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
+            "name": "Zenith Bank",
+            "address": "29 Airport Road, Benin City",
+            "phonenumber":"080305456832",
+            "website": "https://www.zenithbankplc.com",
+            "logo": "https://petosagie.github.io/wdd230/images/bank.jpg",
             "membership": "bronze"
         },
+      
         {
-            "name": "Saunders Insurance LTD",
-            "address": "5216 48 Ave, Taber, AB T1G 1S1",
-            "phonenumber":"(403) 223-4434",
-            "website": "https://saunders-insurance.com/",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
-            "membership": "np"
-        },
-        {
-            "name": "Scotiabank",
-            "address": "4824 53 St, Taber, AB T1G 1W4",
-            "phonenumber":"(403) 223-3513",
-            "website": "https://www.scotiabank.com/global/en/global-site.html",
-            "logo": "https://www.scotiabank.com/content/dam/scotiabank/images/logos/2019/scotiabank-logo-red-desktop-200px.svg",
-            "membership": "np"
-        },
-        {
-            "name": "A & W",
-            "address": "5015 47 Ave, Taber, AB T1G 1R7",
-            "phonenumber":"(403) 223-8901",
-            "website": "https://a&w.com",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
-            "membership": "bronze"
-        },
-        {
-            "name": "McDonald's Restaurant",
-            "address": "4922 46 Ave, Taber, AB T1G 2A4",
-            "phonenumber":"(403) 223-6433",
-            "website": "https://www.mcdonalds.com/ca/en-ca.html",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
-            "membership": "bronze"
-        },
-        {
-            "name": "Taber IGA",
-            "address": "5112 48 Ave, Taber, AB T1G 1R9",
-            "phonenumber":"(403) 223-0672",
-            "website": "https://west.iga.ca/",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
-            "membership": "np"
-        },
-        {
-            "name": "Heritage Inn Hotel & Convention Centre",
-            "address": "4830 46 Ave, Taber, AB T1G 2A4",
-            "phonenumber":"(403) 223-4424",
-            "website": "https://heritageinn.net/",
-            "logo": "https://evasimonbyui.github.io/wdd230/lesson4/images/garnavillo-historical-society.webp",
+            "name": "Randeki Hotel",
+            "address": "30 Boundary Road, GRA, Benin City",
+            "phonenumber":"080436744556",
+            "website": "https://randekihotel.com",
+            "logo": "https://petosagie.github.io/wdd230/images/hotel.jpg",
             "membership": "np"
         }
     ]
