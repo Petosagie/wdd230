@@ -208,7 +208,12 @@
     opacity: .6;
     transform: scale(1.1);
   }  
- 
+  .grid3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
+  }
   /* css for discovery page */
   .list section {
     flex-direction: row;

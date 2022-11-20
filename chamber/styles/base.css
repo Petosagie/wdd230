@@ -629,7 +629,9 @@ section.thankyou {
 grid-column: 1/7;
 background-color: #fee57370;
 }
-
+.cardh4{
+  font-size: 24px;
+}
 /* css for directory page */
 
 div.directory-buttons {
@@ -677,7 +679,10 @@ div#cards section p {
   color: black;
   font-weight: bold;
 }
-
+div#cards section h4 {
+  color: rgb(42 47 185);
+  font-weight: bold;
+}
 div#cards section img {
   width: 100%;
   max-width: 120px;
@@ -690,12 +695,14 @@ div#cards section a {
 }
 
 div#list section {
-  margin: 0.5rem;
-  padding: 0.5rem;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 20% 25% 23% 20% 12%;
+  align-items: center;
+  padding: 0 5px;
+  text-align: left;
   width: auto;
+  font-size: 10px;
 }
-
 div#list section p, div#list section a {
   padding: 0.5rem;
   font-weight: bold;
@@ -713,8 +720,8 @@ div#list section:nth-child(even) {
   display: none;
 }
 main h3 {
-  color: black;
-  font-size: 4rem;
+  color: #ffffff;
+  font-size: 2rem;
   text-align: center;
 }
 /* End of css for discovery page  */

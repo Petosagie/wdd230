@@ -213,13 +213,14 @@
     margin: 0 auto;
 }
 
-  div#list section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    align-items: center;
-    overflow: hidden;
+div#list section {
+  display: grid;
+  grid-template-columns: 20% 25% 23% 20% 12%;
+  align-items: center;
+  padding: 0 5px;
+  text-align: left;
+  width: auto;
+  font-size: 10px;
 }
     
   }

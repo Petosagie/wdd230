@@ -40,14 +40,19 @@ function displayCards(card) {
     //Create elements to add to the document
     let section = document.createElement('section');
     let portrait = document.createElement('img');
+    let p0 = document.createElement('h4');
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let a = document.createElement('a');
+    let p3 = document.createElement('p');
     
     //Add text content to the directory cards
-    p1.textContent = `${card.address}`;
-    p2.textContent = `${card.phonenumber}`;
-    a.textContent = `${card.website}`;
+    p0.textContent = `${card.name}`;
+    p1.textContent = `Address: ${card.address}`;
+    p2.textContent = `Tel: ${card.phonenumber}`;
+    a.textContent = `Website: ${card.website}`;
+    p3.textContent = `Membership Level: ${card.membership}`;
+    p0.classList.add('cardh4');
     
     //Build image attributes by using setAttribute method for src, alt, and loading attribute values.
     portrait.setAttribute('src', card.logo);
@@ -57,9 +62,11 @@ function displayCards(card) {
     
     //Add/append the h2 and image to the section(card)
     section.appendChild(portrait);
+    section.appendChild(p0);
     section.appendChild(p1);
     section.appendChild(p2);
     section.appendChild(a);
+    section.appendChild(p3);
         
     
     //Add/append the section(card) to the div with the card class
@@ -73,12 +80,15 @@ function displayList(list) {
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let a = document.createElement('a');
+    let p3 = document.createElement('p');
+
     
     //Add text content to the directory cards
     h4.textContent = `${list.name}`;
     p1.textContent = `${list.address}`;
     p2.textContent = `${list.phonenumber}`;
     a.textContent = `${list.website}`;
+    p3.textContent = `${list.membership}`;
     a.setAttribute('href', list.website);
     
     //Add/append the h2 and image to the section(card)
@@ -86,6 +96,7 @@ function displayList(list) {
     section.appendChild(p1);
     section.appendChild(p2);
     section.appendChild(a);
+    section.appendChild(p3);
 
      //Add/append the section(card) to the div with the card class
      document.querySelector('#list').appendChild(section);
