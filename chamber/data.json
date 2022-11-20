@@ -11,15 +11,15 @@
         {
             "name": "Kada Cinema",
             "address": "111 Old Sapele Rd, Oka 300102, Benin City",
-            "phonenumber": "080305648355",
+            "phonenumber": "08030564835",
             "website": "https://www.kadacinemas.com",
             "logo": "https://petosagie.github.io/wdd230/images/cinema.jpg",
             "membership": "np"
         },
         {
-            "name": "Fine Girl",
+            "name": "Queen Beauty Saloon",
             "address": "53 Oba Market shopping Plaza, Ring Road",
-            "phonenumber": "080305456832",
+            "phonenumber": "08030545683",
             "website": "httsp://finegirl.com",
             "logo": "https://petosagie.github.io/wdd230/images/clothesshop.jpg",
             "membership": "np"
@@ -27,7 +27,7 @@
         {
             "name": "IO Farm",
             "address": "KM 50 Ugbowo Lagos Road, Benin City",
-            "phonenumber":"090305456832",
+            "phonenumber":"09030545682",
             "website": "https://www.iofarms.com",
             "logo": "https://petosagie.github.io/wdd230/images/farm.jpg",
             "membership": "gold"
@@ -35,7 +35,7 @@
         {
             "name": "Big Mummy Grocery Store",
             "address": " T!4822 53 St, Mission Road",
-            "phonenumber": "071535456832",
+            "phonenumber": "07153545683",
             "website": "https://bigmummys.com/",
             "logo": "https://petosagie.github.io/wdd230/images/groccery.jpg",
             "membership": "np"
@@ -43,7 +43,7 @@
         {
             "name": "Prestige Hotel and Suits",
             "address": "25 Ikpkpan Road, Benin City",
-            "phonenumber": "071748456832",
+            "phonenumber": "07174845683",
             "website": "https://prestigehotel.com",
             "logo": "https://petosagie.github.io/wdd230/images/hotel2.jpg",
             "membership": "silver"
@@ -51,7 +51,7 @@
         {
             "name": "Ta Poultry farm",
             "address": "Km 30 sapele road, Benin City",
-            "phonenumber": "080305446832",
+            "phonenumber": "08030544683",
             "website": "https://www.mypoultry",
             "logo": "https://petosagie.github.io/wdd230/images/poultry.jpg",
             "membership": "bronze"
@@ -59,7 +59,7 @@
         {
             "name": "Gabus International School",
             "address": "47 Technical Schoool Road, Benin City ",
-            "phonenumber":"090605456832",
+            "phonenumber":"09060545832",
             "website": "https://gabusis.com",
             "logo": "https://petosagie.github.io/wdd230/images/school.jpg",
             "membership": "gold"
@@ -67,7 +67,7 @@
         {
             "name": "Ogba Zoo",
             "address": "300 Airport Road, Benin City",
-            "phonenumber":"080305454632",
+            "phonenumber":"08030454632",
             "website": "https://ogazoo.com",
             "logo": "https://petosagie.github.io/wdd230/images/zoo.jpg",
             "membership": "bronze"
@@ -75,7 +75,7 @@
         {
             "name": "Samuel Ogemudia Stadium",
             "address": "30 Stadium road, Ekenwan, Benin City",
-            "phonenumber":"071305456832",
+            "phonenumber":"07135456832",
             "website": "https://samuelogbe.com",
             "logo": "https://petosagie.github.io/wdd230/images/stadium.jpg",
             "membership": "bronze"
@@ -83,7 +83,7 @@
         {
             "name": "Zenith Bank",
             "address": "29 Airport Road, Benin City",
-            "phonenumber":"080305456832",
+            "phonenumber":"08030556832",
             "website": "https://www.zenithbankplc.com",
             "logo": "https://petosagie.github.io/wdd230/images/bank.jpg",
             "membership": "bronze"
@@ -92,7 +92,7 @@
         {
             "name": "Randeki Hotel",
             "address": "30 Boundary Road, GRA, Benin City",
-            "phonenumber":"080436744556",
+            "phonenumber":"08043744556",
             "website": "https://randekihotel.com",
             "logo": "https://petosagie.github.io/wdd230/images/hotel1.jpg",
             "membership": "np"
