@@ -102,3 +102,43 @@ function displayList(list) {
      //Add/append the section(card) to the div with the card class
      document.querySelector('#list').appendChild(section);
 }
+
+// add spotlight for gold members
+if (URL == 'index.html') {
+
+    const requestURL = 'chamber/data.json';
+    
+    fetch(requestURL)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (jsonObject) {
+        const members = jsonObject['data'];
+        goldMembers = members.filter(member => member.membership_level === 'gold');
+        updateSpotlights(goldMembers);
+    })
+}
+
+// helper function to add content
+function updateSpotlights(members) {
+    const cards = document.querySelectorAll('.spotlight-div');
+    
+    shuffleArray(members)   
+    memberIndex = 0
+
+    for (i =0; i < cards.length; i++) {
+        cards[i].children[0].innerText = members[memberIndex].name;
+        cards[i].children[1].src = members[memberIndex].image_url;
+        cards[i].children[1].alt = members[memberIndex].name;
+        cards[i].children[2].innerText = members[memberIndex].slogan;
+        cards[i].children[4].href = "mailto:" + members[memberIndex].email;
+        cards[i].children[4].innerText = members[memberIndex].email;
+        cards[i].children[5].innerText = members[memberIndex].phone;
+        memberIndex ++;
+    }
+    
+
+}
+function shuffleArray(arr) {
+    arr.sort(() => Math.random() - 0.5);
+}
