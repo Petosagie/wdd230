@@ -61,8 +61,9 @@ function displayCards(card) {
     a.setAttribute('href', card.website);
     
     //Add/append the h2 and image to the section(card)
-    section.appendChild(portrait);
     section.appendChild(p0);
+    section.appendChild(portrait);
+    
     section.appendChild(p1);
     section.appendChild(p2);
     section.appendChild(a);
