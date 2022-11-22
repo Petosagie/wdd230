@@ -24,7 +24,7 @@ h1, h2 {
 }
 .banner {
   display: none;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
   left: 0;
   top: 0;
@@ -373,8 +373,7 @@ div.side-by-side h4{
   width: 80%;
   /* height: 200px; */
   text-align: center;
-  border: 1px solid#555;
-}
+  }
 
 
 
@@ -733,4 +732,7 @@ main h3 {
   font-size: 2rem;
   text-align: center;
 }
-/* End of css for discovery page  */
+html {
+  overflow-x: hidden;
+} 
+/* End of css for discovery page 
