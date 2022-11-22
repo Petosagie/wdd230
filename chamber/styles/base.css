@@ -343,7 +343,9 @@ div.spotlight3{
   text-align: center;
   margin: 2px;
 }
-
+.weather h2  {
+  font-size: 2rem;
+}
 
 .weather h1, .weather h3 {
   text-align: center;
@@ -351,29 +353,36 @@ div.spotlight3{
 }
 
 #wind {
-  border-top-style: solid ;
   text-align: center;
 }
 
-#wspeed, #wchill {
+#speed, #windchill {
   margin-left: 30px;
 }
+div.side-by-side {
+  display: flex;
+  justify-content: center;
+}
 
-
+div.side-by-side h4{
+  color: white;
+  font-size: 1.5rem;
+}
  .weather{
   margin: auto;
   width: 80%;
-  height: 200px;
+  /* height: 200px; */
   text-align: center;
   border: 1px solid#555;
 }
 
-.weather img {
-  max-width: 50px;
-  padding: 5px;
-  margin: 0 auto;
-  display: block;
+
+
+#weather-icon {
+  padding: 15px;
+  
 }
+
 
 /* FOOTER */
 footer {

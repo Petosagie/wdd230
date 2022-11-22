@@ -1,24 +1,61 @@
-function getWindchill(temp, wspeed) {
-    // Reference to DOM elements
-    let tempObj = document.querySelector("#temp");
-    let wspeedObj = document.querySelector("#wspeed");
-    let wchillObj = document.querySelector("#wchill");
+const tempF = document.querySelector('#tempF');
+const windS = document.querySelector('#speed')
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('#forecast');
+const windch = document.querySelector('#windchill');
 
-    // Calculate windspeed if necessary
-    let wcMsg = "N/A";
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Benin City&appid=c971b7e2fb20be486c17f083001a2eae&units=imperial';
 
-    if (temp <= 50 && wspeed > 3) {
-        let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(wspeed,0.16)) + 
-        (0.4275*temp*Math.pow(wspeed,0.16)));
-                    
-        
-        wcMsg = `${chill}&deg; F`;
+
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data); // this is for testing the call
+      displayResults(data);
+      windChill(data)
+    } else {
+        throw Error(await response.text());
     }
-
-    // Populate the DOM
-    tempObj.textContent = temp;
-    wspeedObj.textContent = wspeed;
-    wchillObj.innerHTML = wcMsg;
+  } catch (error) {
+      console.log(error);
+  }
 }
 
-getWindchill(30, 10);
+apiFetch();
+
+function  displayResults(weatherData) {
+  tempF.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+  windS.innerHTML = weatherData.wind.speed;
+
+  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  const desc = weatherData.weather[0].description;
+
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = desc.toUpperCase();
+}
+
+function windChill(weatherData) {
+
+const temp = weatherData.main.temp
+const speed = weatherData.wind.speed;
+
+if(temp <= 50 && speed >3){
+    let winch = 35.74 + 0.6215 * temp - 35.75 * (Math.pow(speed, 0.16)) + 0.4275 * temp * (Math.pow(speed, 0.16));
+    windch.innerHTML= winch.toFixed(2) + ' F°';
+}
+else{            
+    windch.innerHTML = "N/A"
+
+tempF.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+windS.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong>`;
+const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+const desc = weatherData.weather[0].description.toUpperCase();
+
+weatherIcon.setAttribute('src', iconsrc);
+weatherIcon.setAttribute('alt', desc);
+captionDesc.textContent = desc;
+
+}}
