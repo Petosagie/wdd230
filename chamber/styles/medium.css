@@ -39,10 +39,10 @@
       padding: 0 0.3em;
     }
   
-    main.home2-grid {
+    /* main.home2-grid {
       grid-template-columns: repeat(3, 1fr);
       
-    }
+    } */
     .hero{
       grid-column: 1/4;
       grid-row: 1;

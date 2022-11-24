@@ -309,6 +309,19 @@ color: #12120ab8;
   
 
 }
+.spotlight-div img {
+  box-shadow: 0 0 30px #777;
+  border: 2px solid #333;
+  padding: 0 10px;
+  background-color: white;
+}
+div.spotlight-div {
+  border: 5px solid #0000004d;
+  height: 200px;
+  width: 100%;
+  padding: 0;
+  margin-top: 15px;
+}
 div.spotlight1{
   height: 200px;
   text-align: center;
