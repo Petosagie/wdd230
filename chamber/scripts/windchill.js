@@ -39,7 +39,7 @@ function  displayResults(weatherData) {
 
 function windChill(weatherData) {
 
-const temp = weatherData.main.temp
+const temp = weatherData.main.temp ;
 const speed = weatherData.wind.speed;
 
 if(temp <= 50 && speed >3){

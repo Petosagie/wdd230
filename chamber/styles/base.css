@@ -388,7 +388,10 @@ div.side-by-side h4{
   text-align: center;
   }
 
-
+.side-by-side {
+  width: 60;
+  height: 60;
+}
 
 #weather-icon {
   padding: 15px;
