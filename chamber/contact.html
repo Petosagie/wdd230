@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Benin City Chamber of Commerce directory page</title>
-    <meta name="description" content="Chamber of Commerce Directory Page ">
-    <meta name="keywords" content="Chamber, commerce, directoy, Benin city, business">
+    <title>Benin City Chamber of Commerce Contact page</title>
+    <meta name="description" content="Contact us in Benin City Chamber of commerce">
+    <meta name="keywords" content="Chamber, commerce, contact, Benin city, business">
     <meta name="author" content="Osagie Ohenhen">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="containerthank">
+    <section class="containerjoin">
         <div class="banner">
             <div class="banner-content">
                 <p><img class="handshake" src="images/handshakeicon.png" alt="handshake icon">Come join us for the
@@ -75,27 +75,56 @@
 
             </div>
         </header>
+        <section class="grid3">
+            <section class="joinForm">
 
-        <!-- CONTENT HERE -->
-        <main>
-            <h3>Business Directory</h3>
-            <div class="directory-buttons">
-                <button id="card-button">&#9871; Cards</button>
-                <button id="list-button">&#9868; List</button>
-            </div>
-            <div id="cards"></div>
-            <div id="list" class="hidden">
-                <section>
-                   <h4>Company Name</h4>
-                    <p>Address</p>
-                    <p>Phone Number</p>
-                    <p>Website</p>
-                    <p>Mem. Level</p>
+
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>Contact Information and Comments: </legend>
+                        <label class="contact"> First Name* <input type="text" name="fname" required></label>
+                        <label class="contact"> Last Name* <input type="text" name="lname" required></label>
+                        <label class="contact"> Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                                required></label>
+                        <label class="contact"> Cell Phone <input type="tel" name="phone" placeholder="12345678910"
+                                required></label>
+                        <label class="contact"> Comment/Message <input type="text" name="comment"></label>
+                    </fieldset>
+
+            </section>
+
+            <section class="board">
+                <h1>Board of Directors</h1>
+                <section class="boardcontact">
+                    <h3>Dr. Osagie Ohenhen, Chairman</h3>
+                    <h3>Tel: 080285367444</h3>
+                    <h3>email: petosagie@gmail.com</h3>
                 </section>
-            </div>
-            <div class="cards member-grid" id="member-data"></div>
-        </main>
-        <!-- FOOTER HERE -->
+                <section class="boardcontact">
+                    <h3>Mrs. Kate Aisen, vice-Chairperson</h3>
+                    <h3>Tel: 08025367444</h3>
+                    <h3>email: kate@gmail.com</h3>
+                </section>
+                <section class="boardcontact">
+                    <h3>Engr. Mike Bishop, Secretary</h3>
+                    <h3>Tel: 0805638846282</h3>
+                    <h3>email: mikebishop@gmail.com</h3>
+                </section>
+                <section class="boardcontact">
+                    <h3>Mrs. Caroline Ederigbe, Treasurer</h3>
+                    <h3>Tel: 08096346282</h3>
+                    <h3>email: caroede@gmail.com</h3>
+                </section>
+                <section class="boardcontact">
+                    <h3>Mr. Peter Obi, Assistant Secretary</h3>
+                    <h3>Tel: 0807638846282</h3>
+                    <h3>email: peterobi@gmail.com</h3>
+                </section>
+                </h3>
+
+            </section>
+        </section>
+
         <footer>
             <div class="footerContent1Container">
                 <div class="footerContent">
@@ -121,13 +150,16 @@
         <div>
             <script src="./scripts/main.js"></script>
             <script src="./scripts/banner.js"></script>
-           <script src="./scripts/directory.js"></script>
+            <script src="./scripts/windchill.js"></script>
+            <script src="./scripts/lazyload.js"></script>
+            <script src="./scripts/localstorage.js"></script>
+
 
 
         </div>
 
 
-    </div>
+    </section>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Kanit:wght@700&display=swap");
 
+
 :root {
   /* PALETTE */
   --background-color: #E7E3D4;
@@ -389,8 +390,8 @@ div.side-by-side h4{
   }
 
 .side-by-side {
-  width: 60;
-  height: 60;
+ 
+  height: 70px;
 }
 
 #weather-icon {
@@ -543,6 +544,10 @@ padding: 4px;
   }
 
 /* ---------  Join Form ---------  */
+.containerjoin{
+  background-color: #777;
+}
+
 form fieldset {
   margin: 5px;
   border: 2px dashed rgba(0, 0, 0, 0.20);
@@ -555,15 +560,17 @@ form legend{
   color: rgba(0, 0, 0, 0.80);
   margin: 0 1rem;
   padding: 0 .5rem;
-  font-size: 1rem;
+  font-size: 20px;
+  font-family: 'Yusei Magic', sans-serif;
 }
 
 form label.contact, form label.company, form div {
   display: block;
   padding-top: 1rem;
   color: rgba(0, 0, 0, 0.80);
-  font-size: .9rem;
+  font-size: 18px;
   text-align: left;
+  font-family: 'Yusei Magic', sans-serif;
 }
 
 form label.contact input, form label.contact select, form label.company input, form label.company select{
@@ -572,7 +579,7 @@ form label.contact input, form label.contact select, form label.company input, f
   border: solid 1px #999;
   border-radius: 3px;
   padding: .75rem;
-  color: rgba(0, 0, 0, 0.80);
+  color: rgb(0, 0, 0);
   width: 87%;
   max-width: 20rem;
   background-color: rgba(255, 255, 255, 0.223);
@@ -606,8 +613,9 @@ form label.memberLevel {
   display: block;
   text-align: left;
   padding: 1rem 0;
-  color: #555;
-  font-size: 1rem;
+  color: rgb(10, 5, 5);
+  font-size: 16px;
+  font-family: 'Yusei Magic', sans-serif;
 
 }
 
@@ -621,6 +629,9 @@ section.testimonials {
 }    
 
   /* ---------  Membership Table ---------  */
+  .membership{
+    text-align: center;
+  }
 th, td {
   border: 1px solid black;
   padding: 10px 3px 10px 3px;
@@ -751,4 +762,23 @@ main h3 {
 html {
   overflow-x: hidden;
 } 
-/* End of css for discovery page 
+/* End of css for discovery page  */
+
+/* css for contact page */
+.board {
+  margin: auto;
+  text-align: center;
+  color: black;
+  margin: 5px 30px;
+  border: 2px solid var(--accent-color);
+}
+
+
+.boardcontact  {
+     margin: 5px 20px 30px;
+}
+.boardcontact h3 {
+  font-family: Roboto, Helvetica, sans-serif;
+  color: black;
+  margin: 10px;
+}

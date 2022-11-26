@@ -212,6 +212,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
+    margin: 5px 20px;
     
   }
   /* css for discovery page */

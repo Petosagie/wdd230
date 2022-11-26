@@ -1,67 +1,76 @@
-const cards = document.querySelector('.spotlight-div');
-const companiesIndexes = [];
-let counter = 1;
+const requestURL = 'https://petosagie.github.io/wdd230/chamber/data.json';
+const aside = document.querySelector('.aside');
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 
-fetch('directory.json')  //feed the required arguments, the URL 
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        const companies = jsonObject['companies'];
-            for (let i = 0; i < companies.length; i++) {
-                if (companies[i].membership === "Gold" || companies[i].membership == "Silver") {
-                    companiesIndexes.push(i) //add only gold and silver memberships to the list
-                };
-            }
-            function getRandomInts(min, max, numberOfInts) {
-                min = Math.ceil(min);
-                max = Math.floor(max); //chooses random ints to go into the set.
-                
-                //create a set
-                let set = new Set();
-                //create a loop to check the set size
-                while (set.size < numberOfInts) {
-                    //push a new random number to the set
-                    set.add(Math.floor(Math.random() * (max - min) + min));
-                }
-                return Array.from(set);
-                
-            }
-        let randomIndexes = getRandomInts(0, companiesIndexes.length, 3);
 
-        for (let i = 0; i < randomIndexes.length; i++){
-            displayCompany(companies[companiesIndexes[randomIndexes[i]]]);
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const directory = jsonObject['directory'];
+    const businesses = directory.filter((business) => business.membership == 'Gold');
+    create_cards(businesses);
+  });
+
+
+let spotlights = [];
+
+function create_cards(businesses){
+    let max = businesses.length;
+
+    
+    while(spotlights.length < 3){
+
+        let random = Math.floor(Math.random()*max);
+
+        if(!spotlights.includes(random)){
+            spotlights.push(random);
+            create_card(businesses[random]);
         }
-    });
+
+    }
+
+    aside.lastChild.classList.add('spotlight3');
+
+}
 
 
+function create_card(business){
+    
 
-function displayCompany(company) {
-    let card = document.createElement('section');
-    let h2 = document.createElement('h2');
-    let portrait = document.createElement('img');
-    let name = document.createElement('h4');
-    let address = document.createElement('h4');
-    let phone = document.createElement('h4');
-    let website = document.createElement('h6');
-    let membership = document.createElement('p');
+    let div = document.createElement('div');
+    let div2 = document.createElement('div');
+    div.setAttribute('class', 'card');
 
-    portrait.setAttribute('src', company.image);
-    portrait.setAttribute('alt', `Portrait of ${company.name}`);
-    portrait.setAttribute('loading', 'lazy');
-    h2.textContent = `${company.name}`;
-    address.textContent = `${company.address}`;
-    // membership.textContent = `Membership: ${company.membership}`;
-    website.textContent = `${company.website}`;
-    phone.textContent = `${company.phone}`;
+    let img = document.createElement('img');
+    img.setAttribute('src', business.logo);
+    img.setAttribute('alt', business.name + " " + business.membership + " member");
+    img.setAttribute('loading', 'lazy');
 
-    card.appendChild(h2);
-    card.appendChild(portrait);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(website);
-    card.appendChild(membership);
 
-    document.querySelector('div.spotlight-div').appendChild(card);
+    let h3 = document.createElement('h3');
+    h3.textContent = business.name;
+
+    let p1 = document.createElement('p');
+    p1.textContent = business.phone;
+
+  
+    let a = document.createElement('a');
+    a.setAttribute('href', business.site);
+    a.textContent = business.site;
+
+    div2.appendChild(img);
+    div2.classList.add('div-height-50');
+    div.appendChild(div2);
+    div.appendChild(h3);
+    div.appendChild(p1);
+
+    div.appendChild(a);
+
+    aside.appendChild(div);
+
 }
