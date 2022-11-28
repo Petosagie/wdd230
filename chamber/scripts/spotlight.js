@@ -7,13 +7,14 @@ const aside = document.querySelector('.aside');
 
 fetch(requestURL)
   .then(function (response) {
-    return response.json();
+    console.log(response.json());
   })
   .then(function (jsonObject) {
     //console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const directory = jsonObject['directory'];
-    const businesses = directory.filter((business) => business.membership == 'Gold');
-    create_cards(businesses);
+    const directory = jsonObject;
+    // const businesses = directory.filter((business) => business.membership == 'Gold');
+    console.log(directory);
+    // create_cards(businesses);
   });
 
 

@@ -143,7 +143,12 @@
     
     
   }
- 
+  .spotlights {
+    background-color: #88a0ae;
+    color: #f4f4f4;
+    height: 200px;
+  }
+  
     div.spotlight1 {
       height: 200px;
       border: 1px solid rgb(132, 53, 106);

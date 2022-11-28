@@ -1,3 +1,4 @@
+
 const div = document.querySelector('.directory-buttons');
 const cardsButton = document.getElementById('card-button');
 const listButton = document.getElementById('list-button');
@@ -102,3 +103,4 @@ function displayList(list) {
      //Add/append the section(card) to the div with the card class
      document.querySelector('#list').appendChild(section);
 }
+
