@@ -5,7 +5,7 @@
             "address": "53 Akpakpava Road, Benin City",
             "phonenumber": "08030564832",
             "website": "https://firstbanknigeria.com",
-            "logo": "https://petosagie.github.io/wdd230/images/bank.jpg",
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/firstbank.png",
             "membership": "gold"
         },
         {
@@ -13,55 +13,55 @@
             "address": "111 Old Sapele Rd, Oka 300102, Benin City",
             "phonenumber": "08030564835",
             "website": "https://www.kadacinemas.com",
-            "logo": "https://petosagie.github.io/wdd230/images/cinema.jpg",
-            "membership": "np"
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/cinema.png",
+            "membership": "bronze"
         },
         {
             "name": "Queen Beauty Saloon",
             "address": "53 Oba Market shopping Plaza, Ring Road",
             "phonenumber": "08030545683",
-            "website": "httsp://finegirl.com",
-            "logo": "https://petosagie.github.io/wdd230/images/clothesshop.jpg",
+            "website": "httsp://queenbeautysaloon.com",
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/saloon.png",
             "membership": "np"
         },
         {
-            "name": "IO Farm",
+            "name": "Chi Farm Ltd",
             "address": "KM 50 Ugbowo Lagos Road, Benin City",
             "phonenumber":"09030545682",
-            "website": "https://www.iofarms.com",
-            "logo": "https://petosagie.github.io/wdd230/images/farm.jpg",
+            "website": "https://www.chi-farms.com",
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/farm.png",
             "membership": "gold"
         },
         {
-            "name": "Big Mummy Grocery Store",
+            "name": "Big Mama Grocery Store",
             "address": " T!4822 53 St, Mission Road",
             "phonenumber": "07153545683",
-            "website": "https://bigmummys.com/",
-            "logo": "https://petosagie.github.io/wdd230/images/groccery.jpg",
+            "website": "https://bigmamastore.com",
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/grocery.png",
             "membership": "np"
         },
         {
             "name": "Prestige Hotel and Suits",
             "address": "25 Ikpkpan Road, Benin City",
             "phonenumber": "07174845683",
-            "website": "https://prestigehotel.com",
-            "logo": "https://petosagie.github.io/wdd230/images/hotel2.jpg",
+            "website": "https://www.prestigehotel.com.ng",
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/prestige.png",
             "membership": "silver"
         },
         {
-            "name": "Ta Poultry farm",
+            "name": "Tetra Poultry farm",
             "address": "Km 30 sapele road, Benin City",
             "phonenumber": "08030544683",
-            "website": "https://www.mypoultry",
-            "logo": "https://petosagie.github.io/wdd230/images/poultry.jpg",
+            "website": "https://www.babolnatetra.com/",
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/poultry.png",
             "membership": "bronze"
         },
         {
             "name": "Gabus International School",
             "address": "47 Technical Schoool Road, Benin City ",
             "phonenumber":"09060545832",
-            "website": "https://gabusis.com",
-            "logo": "https://petosagie.github.io/wdd230/images/school.jpg",
+            "website": "https://www.gabustenderlovingcareacademy.org",
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/gabus.png",
             "membership": "gold"
         },
         {
@@ -69,33 +69,35 @@
             "address": "300 Airport Road, Benin City",
             "phonenumber":"08030454632",
             "website": "https://ogazoo.com",
-            "logo": "https://petosagie.github.io/wdd230/images/zoo.jpg",
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/zoo.png",
             "membership": "bronze"
         },
         {
-            "name": "Samuel Ogemudia Stadium",
+            "name": "Total Petrol Station",
             "address": "30 Stadium road, Ekenwan, Benin City",
             "phonenumber":"07135456832",
-            "website": "https://samuelogbe.com",
-            "logo": "https://petosagie.github.io/wdd230/images/stadium.jpg",
-            "membership": "bronze"
+            "website": "https://totalenergies.com/nigeria",
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/total.png",
+            "membership": "gold"
         },
         {
             "name": "Zenith Bank",
             "address": "29 Airport Road, Benin City",
             "phonenumber":"08030556832",
             "website": "https://www.zenithbankplc.com",
-            "logo": "https://petosagie.github.io/wdd230/images/bank.jpg",
-            "membership": "bronze"
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/zenithbank.png",
+            "membership": "gold"
         },
       
         {
-            "name": "Randeki Hotel",
+            "name": "Randekhi Royal Hotel",
             "address": "30 Boundary Road, GRA, Benin City",
             "phonenumber":"08043744556",
-            "website": "https://randekihotel.com",
-            "logo": "https://petosagie.github.io/wdd230/images/hotel1.jpg",
-            "membership": "np"
+            "website": "http://www.randekhihotels.com/",
+            "logo": "https://petosagie.github.io/wdd230/chamber/images/randeki.png",
+            "membership": "gold"
         }
     ]
 }
+
+

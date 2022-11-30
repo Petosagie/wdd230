@@ -136,37 +136,50 @@
 
   }
 
+  /* sportlights display of companies css */
   .spotlightContainer {
     flex-direction: column;
     grid-area: 1 / 3 / span 3/ 3;
-    
-    
-    
+         
   }
-  .spotlights {
-    background-color: #88a0ae;
-    color: #f4f4f4;
-    height: 200px;
+ 
+/* spotlight_1 */
+.spotlight_1 img {
+    width: 100px;
+}
+div.spotlight_1, div.spotlight_2, div.spotlight_3  {
+  width: auto;
   }
-  
-    div.spotlight1 {
-      height: 200px;
-      border: 1px solid rgb(132, 53, 106);
-      width: auto;
-      
-    }
-    div.spotlight2 {
-      border: 1px solid rgb(132, 53, 106);
-      height: 200px;
-      width: auto;
-      
-    }
-    div.spotlight3 {
-      display: block;
-      border: 1px solid rgb(132, 53, 106);
-      height: 200px;
-    }
-  
+.spotlight_1  h2, .spotlight_2 h2, .spotlight_3 h2 {
+    font-size: 20px;
+    margin: 2px;
+}
+.spotlight_1, .spotlight_2, .spotlight_3 .slogan {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.spotlight_1 p, .spotlight_2 p, .spotlight_3 p {
+    font-size: 10px;
+    margin-bottom: 0;
+}
+/* spotlight_2 */
+.spotlight_2 img {
+    width: 100px;
+}
+/* spotlight_3 */
+.spotlight_3 {
+    display: block;
+    text-align: center;
+    background-color: #fefefe;
+    padding: 10px;
+}
+.spotlight_3 p {
+    font-size: 10px;
+}
+.spotlight_3 img {
+    width: 100px;
+}
+
 
   .footerContent1Container {
     margin: 0 2em;
