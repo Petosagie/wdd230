@@ -72,15 +72,14 @@
       padding: 2px;
   
     }
-    div.spotlight1{
+
+    div.spotlight_1{
       width: 50%;
-      height: 200px;
       border: 2px solid rgb(132, 53, 106);
     }
     
-    div.spotlight2{
+    div.spotlight_2{
       width: 50%;
-      height: 200px;
       border: 2px solid rgb(132, 53, 106);
   
     }

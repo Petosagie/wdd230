@@ -230,7 +230,7 @@ a:active {
   background-color: var(--background-color);
   display: grid;
   gap: 1em;
-  padding: 2em;
+  padding: 0.5em;
 }
 
 main.home2-grid div {
@@ -314,55 +314,42 @@ main.home2-grid div {
   border: 1px solid#555;
 }
 
+/* sportlights display of companies css */
+
 .spotlightContainer {
   display: flex;
   width: 100%;
   height: 100%;
   flex-direction: column;
-
-
 }
 
-.spotlight-div img {
-  box-shadow: 0 0 30px #777;
-  border: 2px solid #333;
-  padding: 0 10px;
-  background-color: white;
-}
-
-div.spotlight-div {
-  border: 5px solid #0000004d;
-  height: 200px;
-  width: 100%;
-  padding: 0;
-  margin-top: 15px;
-}
-
-div.spotlight1 {
-  height: 200px;
+.spotlight_1 {
+  background-color: #fefefe;
+  border-bottom: 1px solid #481D24;
   text-align: center;
-  border: 1px solid rgb(22, 21, 21);
-
+  padding: 15px;
 }
 
-div.spotlight2 {
-  height: 200px;
+.spotlight_1 img {
+  width: 150px;
+  margin: 5px;
+}
+/* spotlight_2 */
+.spotlight_2 {
+  background-color: #fefefe;
   text-align: center;
-  border: 1px solid rgb(155 106 106);
-
+  padding: 15px;
 }
-
-div.spotlight3 {
+.spotlight_2 img {
+  width: 150px;
+  margin: 5px;
+}
+/* spotlight_3 */
+.spotlight_3 {
   display: none;
-  text-align: center;
 }
 
-div.spotlights {
-  background-color: #88a0ae;
-  color: #f8f4fd;
-  height: 200px;
-}
-
+/* sportligh ends */
 .join {
   height: 200px;
   border: 1px solid#555;
@@ -390,9 +377,13 @@ div.spotlights {
   text-align: center;
   margin: 0;
 }
+div.weather-forecast {
+  height: 40px;
+}
 
 #wind {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #speed,
