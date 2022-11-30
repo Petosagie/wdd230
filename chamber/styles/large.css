@@ -159,8 +159,9 @@ div.spotlight_1, div.spotlight_2, div.spotlight_3  {
     margin-bottom: 10px;
 }
 .spotlight_1 p, .spotlight_2 p, .spotlight_3 p {
-    font-size: 10px;
+    font-size: 14px;
     margin-bottom: 0;
+    margin: 2px;
 }
 /* spotlight_2 */
 .spotlight_2 img {
@@ -173,9 +174,7 @@ div.spotlight_1, div.spotlight_2, div.spotlight_3  {
     background-color: #fefefe;
     padding: 10px;
 }
-.spotlight_3 p {
-    font-size: 10px;
-}
+
 .spotlight_3 img {
     width: 100px;
 }
