@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bountiful Foods - Home</title>
+  <meta name="description" content="Bountiful Foods is small business specializing in organic, locally grown foods. They are physically located in Carlsbad, California, however,
+     they have many food trucks that cover the coastal area from Los Angeles to San Diego." />
+  <meta name="author" content="Osagie Ohenhen">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/medium.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <picture><img class="logo logo-header" src="images/bountiful-logo.png" alt="Bountiful Foods Logo" /></picture>
+    </a>
+    <h1 class="site-name name-header">Bountiful Foods</h1>
+    <div class="header-social">
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.webp" alt="Facebook Logo"
+          height="48" width="48" /></a>
+      <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube-logo.webp" alt="YouTube Logo"
+          height="48" width="48" /></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.webp" alt="Instagram Logo"
+          height="48" width="48" /></a>
+      <a href="https://twitter.com/" target="_blank"><img src="images/twitter-logo.webp" alt="Twitter Logo" height="48"
+          width="48" /></a>
+    </div>
+    <button id="hamBtn"><span>&#9776;</span><span>X</span></button>
+    <nav>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fresh.html" class="active">Fresh</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2 class="form-heading">Drink Order Form</h2>
+    <form method="get" id="drinkForm">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="firstName" class="top">First Name*
+          <input type="text" name="firstName" id="firstName" required /></label>
+        <label for="lastName" class="top">Last Name
+          <input type="text" name="lastName" id="lastName" /></label><label for="email" class="top">Email*
+          <input type="email" name="email" placeholder="user@email.com" id="email" required /></label>
+        <label for="phone" class="top">Phone*
+          <input type="tel" name="phone" placeholder="1235551234" id="phone" pattern="[0-9]{10}" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Drink Order</legend>
+        <label for="ingredient1" class="top">First Ingredient
+          <select name="ingredient1" id="ingredient1" required>
+            <option value="" selected disabled>Choose an ingredient</option>
+          </select>
+        </label>
+        <label for="ingredient2" class="top">Second Ingredient
+          <select name="ingredient2" id="ingredient2">
+            <option value="" selected disabled>Choose an ingredient</option>
+          </select>
+        </label>
+        <label for="ingredient3" class="top">Third Ingredient
+          <select name="ingredient3" id="ingredient3">
+            <option value="" selected disabled>Choose an ingredient</option>
+          </select>
+        </label>
+        <label for="specialInstructions" class="top">Special Instructions
+          <textarea name="specialInstructions" id="specialInstructions" rows="5" cols="30"></textarea>
+        </label>
+      </fieldset>
+      <input type="hidden" name="dateSubmitted" value="" id="subDate" />
+      <input type="submit" id="subButton" name="subButton" value="Order Drink" class="form-button" />
+    </form>
+    <div id="drinkOrder" class="def-div">
+      <h3>Drink Order</h3>
+      <p>
+        <strong>Date Ordered:</strong><br />
+        <span id="drinkOrderDate"></span>
+      </p>
+      <p>
+        <strong>First Name:</strong><br />
+        <span id="orderFirstName"></span>
+      </p>
+      <p>
+        <strong>Last Name:</strong><br />
+        <span id="orderLastName"></span>
+      </p>
+      <p>
+        <strong>Email:</strong><br />
+        <span id="orderEmail"></span>
+      </p>
+      <p>
+        <strong>Phone:</strong><br />
+        <span id="orderPhone"></span>
+      </p>
+      <p>
+        <strong>First Ingredient:</strong><br />
+        <span id="orderIngredient1"></span>
+      </p>
+      <p>
+        <strong>Second Ingredient:</strong><br />
+        <span id="orderIngredient2"></span>
+      </p>
+      <p>
+        <strong>Third Ingredient:</strong><br />
+        <span id="orderIngredient3"></span>
+      </p>
+      <p>
+        <strong>Special Instructions:</strong><br />
+        <span id="orderSpecialInstructions"></span>
+      </p>
+      <p>
+        <strong>Total Carbohydrates:</strong><br />
+        <span id="totCarbs"></span>
+      </p>
+      <p>
+        <strong>Total Protein:</strong><br />
+        <span id="totProtein"></span>
+      </p>
+      <p>
+        <strong>Total Fat:</strong><br />
+        <span id="totFat"></span>
+      </p>
+      <p>
+        <strong>Total Calories:</strong><br />
+        <span id="totCalories"></span>
+      </p>
+      <p>
+        <strong>Total Sugar:</strong><br />
+        <span id="totSugar"></span>
+      </p>
+      <br />
+      <p>
+        Fresh fruits can be purchased at our storefront or any of our food
+        trucks.
+      </p>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-site-info">
+      <a href="index.html" class="logo-link">
+        <picture><img class="logo logo-footer" src="images/bountiful-foods-logo.webp" alt="Bountiful Foods Logo" />
+        </picture>
+      </a>
+      <h3 class="site-name name-footer">Bountiful Foods</h3>
+      <p class="footer-address">
+        1234 Main Street<br />
+        Carlsbad, CA 92008<br />
+      </p>
+      <p class="footer-email">
+        <a href="mailto:contact@bountiful-foods-ca.com">contact@bountiful-foods-ca.com</a>
+      </p>
+      <p class="footer-phone">
+        <a href="tel:123-456-7890">(123) 456-7890</a>
+      </p>
+      <p class="footer-loc">
+        <a href="https://goo.gl/maps/Hcw3bosmpDaBHeqQA" target="_blank">Location Map</a>
+      </p>
+    </div>
+    <hr />
+    <div>
+      <p class="footer-copy">
+        &copy; <span class="currentYear"></span> | Bountiful Foods |
+        <span class="lastModif"></span> | Weather Data provided by
+        <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>
+        | <a href="references.html" target="_blank">References</a>
+      </p>
+    </div>
+  </footer>
+  <script src="scripts/bountiful.js"></script>
+  <script src="scripts/drink.js"></script>
+</body>
+
+</html>

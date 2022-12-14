@@ -1,0 +1,160 @@
+@media only screen and (min-width: 61rem) {
+
+  body {
+      font-size: 20px;
+  }
+  
+  main {
+      max-width: 1440px;
+  }
+  
+  header {
+      grid-template-columns: repeat(3, 1fr);
+      height: 180px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+ }
+  
+ .header-social {
+  margin: auto;
+ width: 30%;
+}
+  #hamBtn {
+      display: none;
+  }
+  
+  
+  nav ul#primaryNav {
+      display: flex;
+      text-align: center;
+  }
+  
+  nav ul li {
+      flex: 1 1 auto;
+  }
+  
+  .home-main {
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .hero-div img, .hero-div {
+      height: 600px;
+  }
+  
+  .pop-drinks {
+      grid-template-columns: repeat(4, 1fr);
+      grid-row: 1 / 3;
+  }
+  
+  .pop-drinks h3 {
+      grid-column: span 4;
+  }
+  
+  .drink7, .drink8 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  .drink7 img, .drink8 img {
+      width: 100%;      
+      object-fit: cover;
+      overflow: hidden;
+      display: block;
+      margin: 0 auto;
+  }
+
+  .drinks-ordered{
+    display: flex;
+    flex-direction: row;
+  }
+  .weth-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 97%;
+    height: 500px;
+    margin: auto;
+
+  }
+  .weather {
+      grid-column: 1 / 2;
+      grid-row-start: 1;
+      
+  }
+
+  .weather img {
+    height: 60px;
+  }
+  .drinks-ordered p{
+    padding: 13px;
+    margin-right: 15px;
+  }
+  
+  .weather h3 {
+      margin-top: 0;
+  }
+  
+  .current-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: white;
+      margin: .5rem .5rem 1rem 0;
+      height: 400px;
+  }
+  
+  .temp-sec {
+      background-color: white;
+      margin: 0 auto;
+      padding: 0 1rem;
+  }
+  
+  .current-div h4 {
+      border-bottom: .5rem solid var(--primary-color);
+      margin-top: 0;
+  }
+  
+  .contact-div {
+      grid-column: 2 / 3;
+      grid-row-start: 1;
+
+      /* grid-row: 2 / 4; */
+  }
+  
+  .about-area-div {
+      grid-column: span 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  
+  .about-area-div h3 {
+      grid-column: span 2;
+  }
+  
+  .about-area-sec2 h4 {
+      border-top: none;
+  }
+  
+  .about-area-sec1 h4, .about-area-sec3 h4 {
+      margin-top: 2rem;
+  }
+  
+  /* Start of Fresh Page */
+  
+  form, #drinkOrder {
+      max-width: 60%;
+      margin: 0 auto;
+  }
+  
+  .form-heading {
+      margin-left: 28%;
+  }
+  
+  #drinkOrder{
+      max-width: 47%;
+      margin: 0 auto;
+  }
+  
+  }

@@ -1,0 +1,548 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Kaushan+Script&display=swap');
+
+/* :root {
+    --primary-color: #f68b15;
+    --secondary-color: #d90102;
+    --accent1-color: #46580c;
+    --accent2-color: #f36165;
+    --accent3-color: #d7e841;
+
+    --heading-font: 'Rubik', Arial, sans-serif;
+    --paragraph-font: 'Poppins', Helvetica, sans-serif;
+} */
+:root {
+  /* PALETTE */
+  --background-color: #fffcea;
+  --primary-color: #260;
+  --secondary-color: rgb(245, 245, 11);
+  --accent-color: #FF7D00;
+  --accent2-color: #f36165;
+  --accent3-color: #d7e841;
+
+  /* FONTS */
+  --heading-font: "Kanit", sans-serif;
+  --text-font: "Bitter", serif;
+  --paragraph-font: 'Poppins', Helvetica, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--paragraph-font);
+    
+}
+
+ h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+main {
+    max-width: 720px;
+    margin: 1rem auto;
+    line-height: 1.5;
+}
+
+header, footer {
+    background: linear-gradient(to left, rgb(102, 171, 70), #260);
+    color: black;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+
+header h1 {
+  font-family: 'Kaushan Script', 'Bradley Hand', sans-serif;
+    color: rgb(245, 245, 11);
+    font-size: 1.5rem;
+}
+
+/* .header-social {
+    display: none;
+} */
+
+.header-social {
+  display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 15px;
+} 
+.header-social img {
+  width: 30px;
+
+}
+
+
+nav {
+    grid-column: span 3;
+}
+
+#hamBtn {
+    border: 1px solid white;
+    font-size: 2rem;
+    width: 42px;
+    height: 42px;
+    justify-self: center;
+    align-self: center;
+    padding: 0;
+    color: white;
+    background-color: var(--accent1-color);
+}
+
+.name-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a, footer a {
+    align-self: center;
+    justify-self: center;
+}
+
+#hamBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamBtn.open span:nth-child(2) {
+    display: block;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color:#59926f;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+nav ul li a:hover {
+    background-color: var(--accent-color);
+}
+
+nav ul li a.active {
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+.hero-div {
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero-div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.hero-div h2 {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(236, 122, 122, 0.5);
+    padding: .25rem .5rem;
+}
+
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+}
+
+.def-div {
+    background-color: var(--accent3-color);
+    margin: .5rem auto;
+    padding: .5rem 1rem;
+}
+
+.def-div h3, .def-div h2 {
+    color: var(--primary-color);
+    background-color: white;
+    padding: .5rem;
+    margin: 1rem 0 0 0;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.def-div p {
+    background-color: white;
+    padding: .5rem;
+    margin-top: 0;
+}
+
+.contact-div {
+    grid-row: 2 / 3;
+}
+
+.pop-drinks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.pop-drinks h3 {
+    grid-column: span 2;
+    text-align: center;
+    background-color: white;
+    color: var(--primary-color);
+    padding: .5rem;
+    margin: 0;
+}
+
+.drink-card {
+    background-color: white;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.drink-card h4 {
+    background-color: white;
+    color: var(--primary-color);
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    margin-top: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drink-card img {
+    width: 100%;
+    /* max-width: 140px; */
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.drink5, .drink6, .drink7, .drink8 {
+    display: none;
+}
+
+.drinks-ordered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.drinks-ordered button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: .5rem;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+.about-area-div {
+    grid-row: 5 / 6;
+}
+
+.about-area-div h4 {
+    text-align: center;
+    background-color: white;
+    color: var(--secondary-color);
+    padding: .5rem;
+    margin: .5rem 0;
+}
+
+.about-area-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-area-sec h4, .about-area-sec p {
+    width: 90%;
+}
+
+.about-area-sec picture {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.about-area-sec img {
+    background-color: white;
+    padding: .5rem;
+    transition: all .5s;
+}
+
+.about-area-sec img:hover {
+    transform: scale(1.1);
+}
+
+.about-area-sec3, .about-area-sec4 {
+    display: none;
+}
+
+.weather, .body-social {
+    width: 89%;
+    margin: .5rem auto;
+}
+
+.weather h4 {
+    text-align: center;
+    background-color: white;
+    padding: .5rem;
+    margin: .5rem 0;
+}
+
+.weather p {
+    background-color: white;
+    padding: .5rem;
+    margin: 0;
+}
+
+.temp-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    margin-bottom: .5rem;
+}
+
+#temp {
+    background-color: transparent;
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+#condition {
+    font-weight: 900;
+}
+
+.current-div {
+    margin-bottom: 2rem;
+}
+
+.forecast-div {
+    margin-top: 2rem;
+}
+
+.current-div h4, .forecast-div h4 {
+    font-size: 1.25rem;
+}
+
+hr {
+    border-top: 2px solid black;
+}
+
+.forecast-div h5 {
+    font-size: 1rem;
+    background-color: white;
+    margin: 0 auto;
+    padding-left: 1rem;
+}
+
+.forecast-div p {
+    padding-left: 2rem;
+}
+
+.body-social {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+}
+
+.body-social h3 {
+    grid-column: span 4;
+    margin-top: 0;
+    text-align: center;
+}
+
+.body-social a {
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+footer hr {
+    width: 97%;
+}
+
+.name-footer {
+    padding: .5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: black;
+}
+
+
+/* Start of Fresh Page */
+
+.form-heading {
+    color: var(--secondary-color);
+    margin-left: 4rem;
+}
+
+form fieldset {
+    margin: 1rem auto;
+    border: 1px solid var(--accent1-color);
+    border-radius: .5rem;
+    padding: .5rem;
+    max-width: 80%;
+}
+
+form legend {
+    color: var(--secondary-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-weight: bold;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    margin: auto 5%;
+}
+
+fieldset label:nth-of-type(1) {
+    padding-top: 0;
+}
+
+form label.top input, form textarea {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: .25rem;
+    padding: .75rem;
+    color: #555;
+    background-color: rgba(0,0,0,0.15);
+    width: 80%;
+    margin: auto 5%;
+}
+
+form select {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: .25rem;
+    padding: .75rem;
+    color: #555;
+    background-color: rgba(0,0,0,0.15);
+    width: 90%;
+    margin: auto 5%;
+}
+
+form input.form-button {
+    display: flex;
+    border: none;
+    background-color: var(--accent1-color);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem auto;
+    justify-self: center;
+    justify-content: center;
+    width: 84%;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+#drinkOrder h3 {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+#drinkOrder p {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+#drinkOrder {
+    padding-bottom: 1rem;
+}
+
+/* Start of About Page */
+
+iframe {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.map p {
+    padding-left: 1rem;
+}

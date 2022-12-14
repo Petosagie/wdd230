@@ -14,15 +14,16 @@ fetch(spotlightRequestURL)
         for (let i = 1; i <= lenght; i++) {
             if (spotlightCompanies[i].membership === 'gold' || spotlightCompanies[i].membership === 'silver') {
 
-            for (let i = 1; i < 4; i++) {
-            
-                const spotlightCard = document.querySelector(`.spotlight_${i}`);
-                console.log(Math.random());
-                spotlightCard.innerHTML = displayspotlightCompanies(spotlightCompanies[Math.floor(Math.random() * lenght)]);
-                console.log(spotlightCard);
-                console.log('.spotlight_' + i);
+                for (let i = 1; i < 4; i++) {
+
+                    const spotlightCard = document.querySelector(`.spotlight_${i}`);
+                    console.log(Math.random());
+                    spotlightCard.innerHTML = displayspotlightCompanies(spotlightCompanies[Math.floor(Math.random() * lenght)]);
+                    console.log(spotlightCard);
+                    console.log('.spotlight_' + i);
+                }
             }
-        }}
+        }
 
         // let spotlightLenght = object.keys( spotlightCompanies.lenght)
         // spotlightCompanies.forEach(displayspotlightCompanies);

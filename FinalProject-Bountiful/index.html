@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bountiful Foods - Home</title>
+  <meta name="description" content="Bountiful Foods is small business specializing in organic, locally grown foods. They are physically located in Carlsbad, California, however,
+     they have many food trucks that cover the coastal area from Los Angeles to San Diego." />
+  <meta name="author" content="Osagie Ohenhen">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/medium.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <picture><img class="logo logo-header" src="images/bountiful-logo.png" alt="Bountiful Foods Logo" />
+      </picture>
+    </a>
+    <h1 class="site-name name-header">Carlsbad Bountiful Foods</h1>
+    <div class="header-social">
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook Logo"></a>
+      <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter Logo"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram Logo"></a>
+
+    </div>
+    <button id="hamBtn"><span>&#9776;</span><span>X</span></button>
+    <nav>
+      <ul id="primaryNav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="fresh.html">Fresh</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero-div">
+    <h2>Support locally grown food</h2>
+    <picture>
+      <source media="(max-width: 36.9rem)" srcset="images/bountiful-heroSmall.jpg" />
+      <source media="(max-width: 60.9rem)" srcset="images/bountiful-heroMedium.jpg" />
+      <img class="hero-image" src="images/bountiful-hero.jpg" alt="Hero image of various fruits />
+    </picture>
+  </div>
+  <main class=" home-main">
+      <div class="pop-drinks def-div">
+        <h3>Popular Fruit drinks </h3>
+        <div class="drink-card drink1">
+          <h4>Ananas Da Panna</h4>
+          <picture>
+            <img src="images/pineapple1.jpg" alt=" Ananas Da Panna" loading="lazy" />
+            <p> A twist to the popular mango drink, this recipe calls for fresh pineapple pulp which is blended with
+              cumin powder, black salt and lime juice.</p>
+          </picture>
+        </div>
+        <div class="drink-card drink2">
+          <h4>Lychee Pomegranate Strawberry</h4>
+          <picture>
+            <img src="images/pomegranate1.jpg" alt="Lychee Pomegranate Strawberry smoothie" loading="lazy" />
+            <p>Detox with this refreshing ayurvedic juice, packed with the goodness of beetroot and pomegranate.</p>
+          </picture>
+        </div>
+        <div class="drink-card drink3">
+          <h4>Watermelon Lychee Granita</h4>
+          <picture>
+            <img src="images/watermelon1.jpg" alt="Watermelon Lychee Granita" loading="lazy" />
+          </picture>
+          <p>A refreshing way to beat the heat. Throw in some watermelon pieces along with ginger, mint leaves, lemon
+            and lychee topped with lots of ice! </p>
+        </div>
+        <div class="drink-card drink4">
+          <h4>Aam Ras</h4>
+          <picture>
+            <img src="images/mango-pulp1.jpg" alt="Aam Ras" loading="lazy" />
+          </picture>
+          <p>The fruit of the summer shines its way into your glass. A lovely blend of mango pulp, lime juice and
+            spices. </p>
+        </div>
+        <div class="drink-card drink5">
+          <h4>Strawberry Banana Smoothie</h4>
+          <picture>
+            <img src="images/strawberry_banana1.jpg" alt="Strawberry Banana Smoothie" loading="lazy" />
+          </picture>
+          <p>Blended up with a handful of ice and your choice of milk (dairy or plant-based), this strawberry banana
+            smoothie is delightfully smooth and creamy and satisfying.</p>
+        </div>
+        <div class="drink-card drink6">
+          <h4>Orange and Basil Juice</h4>
+          <picture>
+            <img src="images/orange-juice1.jpg" alt="Orange and Basil Juice" loading="lazy" />
+          </picture>
+          <p>Orange and basil come together to create this revitalizing drink which is perfect to beat the heat. Top it
+            up with ice and enjoy. </p>
+        </div>
+        <div class="drink-card drink7">
+          <h4>Cool Kiwi Juice</h4>
+          <picture>
+            <img src="images/kiwi-juice1.jpg" alt="Cool Kiwi Juice" loading="lazy" />
+          </picture>
+          <p>A tall glass of refreshing drink with cucumber, kiwi and the zing of Thai ginger</p>
+        </div>
+        <div class="drink-card drink8">
+          <h4>Grape Nectar</h4>
+          <picture>
+            <img src="images/grape-nepter1.jpg" alt="Grape Nectar" loading="lazy" />
+          </picture>
+          <p>A sweet and tangy mixture of grape juice, lemon chunks and lychees. Overcome the summer heat with this cool
+            mocktail. </p>
+        </div>
+      </div>
+      <div class="drinks-ordered def-div">
+        <p>
+          You've ordered a total of <span id="drinksOrdered">0</span> drinks.
+          Would you like to order another?
+        </p>
+        <button onclick="window.location.href = 'fresh.html';">
+          Create Your Own Drink
+        </button>
+      </div>
+      <section class = "weth-cont">
+      <div class="weather def-div">
+        <h3>Weather</h3>
+        <div class="current-div">
+          <h4>Current Conditions</h4>
+          <section class="temp-sec">
+            <picture>
+              <img id="weatherIcon" src="#" alt="" />
+            </picture>
+            <h5 id="temp"></h5>
+          </section>
+          <p id="condition"></p>
+          <p id="wind-speed">Wind Speed: <span id="windSpeed"></span></p>
+          <p id="wind-chill">Wind Chill: <span id="windChill"></span></p>
+          <p id="humidity">Humidity: <span id="humid"></span></p>
+        </div>
+        <hr class="weather-hr" />
+        <div class="forecast-div">
+          <h4>3-Day Forecast</h4>
+          <h5 id="day1"></h5>
+          <p>
+            High: <span id="day1Hi"></span> - Low: <span id="day1Lo"></span>
+          </p>
+          <h5 id="day2"></h5>
+          <p>
+            High: <span id="day2Hi"></span> - Low: <span id="day2Lo"></span>
+          </p>
+          <h5 id="day3"></h5>
+          <p>
+            High: <span id="day3Hi"></span> - Low: <span id="day3Lo"></span>
+          </p>
+        </div>
+      </div>
+      <div class="body-social def-div">
+        <h3>Follow Us On Social Media</h3>
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-logo.webp" alt="Facebook Logo"
+            height="32" width="32" /></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube-logo.webp" alt="YouTube Logo"
+            height="32" width="32" /></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.webp" alt="Instagram Logo"
+            height="32" width="32" /></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/twitter-logo.webp" alt="Twitter Logo"
+            height="32" width="32" /></a>
+      </div>
+      <div class="contact-div def-div">
+        <h3>Contact Info</h3>
+        <p class="contact-blurb">
+          Bountiful Foods is a small business specializing in organic, locally
+          grown fruits. We are physically located in Carlsbad, California,
+          however, we have many food trucks that cover the coastal area from Los
+          Angeles to San Diego. Through our site you can order a drink, and at
+          our storefront or any of our trucks you can purchase fresh fruit. We
+          are open 7 days a week from 8am to 8pm.
+          <br />
+          <a class="contact-address" href="https://www.google.com/maps" target="_blank">
+            1234 Main Street<br />
+            Carlsbad, CA 92008</a><br />
+          <a href="Email:contact@bountifulfoodsca.com">contact@bountifulfoodsca.com</a><br />
+          <a href="tel:123-555-3000">(123) 555-3000</a>
+        </p>
+      </div>
+      </section>
+      <div class="about-area-div def-div">
+        <h3>About the Local Area</h3>
+        <section class="about-area-sec1 about-area-sec">
+          <h4>Carlsbad State Beach</h4>
+          <picture>
+            <img src="images/state-beach.webp" alt="Carlsbad State Beach" loading="lazy" />
+          </picture>
+          <p>
+            Carlsbad State Beach is a protected beach in the state park system
+            of California, United States, located in Carlsbad. It is a San Diego
+            County beach with coastal bluffs. Popular activities include
+            swimming, surfing and bodyboarding several nearby breaks, scuba
+            diving, fishing, and beachcombing. Many visitors camp on the
+            campsites on top of the cliffs. Access to the beach is through the
+            multiple staircases and also one ramp. Amenities include showers,
+            bathrooms, electricity, water, Wi-Fi, and a camp store. There are
+            220 campsites total. The 44-acre (18 ha) park was established in
+            1933. (Source:
+            <a href="https://en.wikipedia.org/wiki/Carlsbad_State_Beach" target="_blank">Wikipedia</a>)
+          </p>
+        </section>
+        <section class="about-area-sec2 about-area-sec">
+          <h4>Legoland California</h4>
+          <picture>
+            <img src="images/legoland.webp" alt="Legoland, California enterance" loading="lazy" />
+          </picture>
+          <p>
+            Legoland California Resort is a theme park, miniature park, and
+            aquarium located in Carlsbad, California, based on the Lego toy
+            brand. Opening on March 20, 1999, it was the third Legoland park to
+            open and the first outside of Europe. The park is currently owned by
+            Merlin Entertainments, which took a controlling interest in 2005. A
+            second park in the United States, Legoland Florida, opened in 2011.
+            A third park, Legoland New York, opened in May 2021. (Source:
+            <a href="https://en.wikipedia.org/wiki/Legoland_California" target="_blank">Wikipedia</a>)
+          </p>
+        </section>
+        <section class="about-area-sec3 about-area-sec">
+          <h4>Omni La Costa Resort and Spa</h4>
+          <picture>
+            <img src="images/" alt="Overlooking a gold course" loading="lazy" />
+          </picture>
+          <p>
+            The Omni La Costa Resort & Spa is a luxury destination resort hotel
+            opened in 1965, located in Carlsbad, California, and is owned by
+            Omni Hotels & Resorts, based out of Dallas, Texas. The resort is
+            located in the San Diego area hills and is known for its golf
+            courses and hosts professional golf and tennis tournaments.
+            Tournaments at La Costa were hosted starting in the late 1960s,
+            including many PGA Tour events and tennis events such as the
+            Southern California Open. Currently the resort is home to events
+            such as World Team Tennis and the California State Amateur
+            Championship. Omni La Costa Resort & Spa is a member of Historic
+            Hotels of America, the official program of the National Trust for
+            Historic Preservation, and has hosted the La Costa Film Festival.
+            (Source:
+            <a href="https://en.wikipedia.org/wiki/Omni_La_Costa_Resort_and_Spa" target="_blank">Wikipedia</a>)
+          </p>
+        </section>
+        <section class="about-area-sec4 about-area-sec">
+          <h4>The Flower Fields</h4>
+          <picture>
+            <img src="images/flower-fields.webp" alt="Field of flowers" loading="lazy" />
+          </picture>
+          <p>
+            The Flower Fields is a flower garden in Carlsbad Ranch in Carlsbad,
+            California. It is open to visitors between March 1st and Mother's
+            Day. The Flower Fields' attractions include its "Tecolote Giant
+            Ranunculus", a greenhouse filled with cymbidium orchids, a
+            300-by-170-foot American flag made out of red, white, and blue
+            petunias, as well as the Field's "sweet pea maze." The Fields offer
+            Antique Tractor-Wagon rides with tractor-wagons provided by the
+            Antique Gas and Steam Engine Museum of Vista, California. The Flower
+            Fields also hosts a variety of musical and themed events. Past
+            events have included Kid's Day, Bluegrass Day and Zydeco Day.
+            (Source:
+            <a href="https://en.wikipedia.org/wiki/The_Flower_Fields" target="_blank">Wikipedia</a>)
+          </p>
+        </section>
+      </div>
+      </main>
+      <footer>
+        <div class="footer-site-info">
+          <a href="index.html" class="logo-link">
+            <picture><img class="logo logo-footer" src="images/bountiful-foods-logo.webp" alt="Bountiful Foods Logo" />
+            </picture>
+          </a>
+          <h4 class="site-name name-footer">Bountiful Foods</h4>
+          <p class="footer-address">
+            1234 Main Street<br />
+            Carlsbad, CA 92008<br />
+          </p>
+          <p class="footer-email">
+            <a href="mailto:contact@bountiful-foods-ca.com">contact@bountiful-foods-ca.com</a>
+          </p>
+          <p class="footer-phone">
+            <a href="tel:123-456-7890">(123) 456-7890</a>
+          </p>
+          <p class="footer-loc">
+            <a href="https://goo.gl/maps/Hcw3bosmpDaBHeqQA" target="_blank">Location Map</a>
+          </p>
+        </div>
+        <hr />
+        <div>
+          <p class="footer-copy">
+            &copy; <span class="currentYear"></span> | Bountiful Foods |
+            <span class="lastModif"></span> | Weather Data provided by
+            <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>
+            | <a href="references.html" target="_blank">References</a>
+          </p>
+        </div>
+      </footer>
+      <script src="scripts/bountiful.js"></script>
+      <script src="scripts/weather.js"></script>
+      <script src="scripts/drinksOrdered.js"></script>
+</body>
+
+</html>
