@@ -444,7 +444,7 @@ footer hr {
 footer a {
     color: black;
 }
-footer h4 {
+footer h4, h3{
     font-family: 'Kaushan Script', 'Bradley Hand', sans-serif;
     color: rgb(245, 245, 11);
 }
@@ -452,7 +452,7 @@ footer h4 {
 /* Start of Fresh Page */
 
 .form-heading {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-left: 4rem;
 }
 
@@ -465,7 +465,7 @@ form fieldset {
 }
 
 form legend {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin: 0 1rem;
     padding: 0 .5rem;
     font-weight: bold;

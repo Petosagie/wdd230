@@ -161,6 +161,9 @@
   #drinkOrder{
       max-width: 47%;
       margin: 0 auto;
-  }
+        }
+    .logo-footer {
+     width: 50%;
+    }
   
   }
