@@ -366,10 +366,12 @@ nav ul li a.active {
 
 .current-div {
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .forecast-div {
     margin-top: 2rem;
+    text-align: center;
 }
 
 .current-div h4, .forecast-div h4 {
