@@ -37,6 +37,7 @@
   
   .home-main {
       grid-template-columns: 1fr 1fr;
+      display: block;
   }
   
   .hero-div img, .hero-div {
@@ -126,6 +127,7 @@
   .about-area-div {
       grid-column: span 2;
       display: grid;
+      display: block;
       grid-template-columns: 1fr 1fr;
   }
   
@@ -133,13 +135,17 @@
       grid-column: span 2;
   }
   
-  .about-area-sec2 h4 {
+  /* .about-area-sec2 h4 {
       border-top: none;
-  }
-  
-  .about-area-sec1 h4, .about-area-sec3 h4 {
+  } */
+  .about-area-sec1 h4 {
+    border-top: .5rem solid var(--primary-color);
+}
+  .about-area-sec1 h4, .about-area-sec2 h4, .about-area-sec3 h4, .about-area-sec4 h4 {
       margin-top: 2rem;
+      margin-bottom: 2rem;
   }
+ 
   
   /* Start of Fresh Page */
   

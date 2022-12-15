@@ -290,7 +290,6 @@ nav ul li a.active {
 .about-area-div h4 {
     text-align: center;
     background-color: white;
-    color: var(--secondary-color);
     padding: .5rem;
     margin: .5rem 0;
 }
@@ -395,7 +394,7 @@ hr {
 
 .body-social {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 1rem;
 }
 
@@ -427,7 +426,11 @@ footer picture {
     align-items: center;
     padding-top: 1rem;
 }
-
+footer img {
+    width: 10px;
+  
+  }
+  
 footer hr {
     width: 97%;
 }
@@ -441,7 +444,10 @@ footer hr {
 footer a {
     color: black;
 }
-
+footer h4 {
+    font-family: 'Kaushan Script', 'Bradley Hand', sans-serif;
+    color: rgb(245, 245, 11);
+}
 
 /* Start of Fresh Page */
 
