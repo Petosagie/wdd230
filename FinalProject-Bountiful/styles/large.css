@@ -56,7 +56,7 @@
   .drink7, .drink8 {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+     
   }
   
   .drink7 img, .drink8 img {
