@@ -7,19 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carlsbad Bountiful Foods - Fresh Page</title>
   <meta name="description" content="Bountiful Foods is small business specializing in organic, locally grown foods. They are physically located in Carlsbad, California, however,
-     they have many food trucks that cover the coastal area from Los Angeles to San Diego." >
+     they have many food trucks that cover the coastal area from Los Angeles to San Diego.">
   <meta name="author" content="Osagie Ohenhen">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/medium.css">
   <link rel="stylesheet" href="styles/large.css">
+
 </head>
 
 <body>
   <header>
     <a href="index.html">
-      <picture><img class="logo logo-header" src="images/bountiful-logo.png" alt="Bountiful Foods Logo" ></picture>
+      <picture><img class="logo logo-header" src="images/bountiful-logo.png" alt="Bountiful Foods Logo"></picture>
     </a>
     <h1 class="site-name name-header">Carlsbad Bountiful Foods</h1>
     <div class="header-social">
@@ -38,116 +39,149 @@
     </nav>
   </header>
   <main>
-    <h2 class="form-heading">Drink Order Form</h2>
-    <form method="get" id="drinkForm">
+    <form id="drink-form" class="form drink-order-form" onsubmit="return false">
+      <h2>Drink Order Form</h2>
+      <hr>    
       <fieldset>
-        <legend>Contact Information</legend>
-        <label for="firstName" class="top">First Name*
-          <input type="text" name="firstName" id="firstName" required ></label>
-        <label for="lastName" class="top">Last Name
-          <input type="text" name="lastName" id="lastName" ></label><label for="email" class="top">Email*
-          <input type="email" name="email" placeholder="user@email.com" id="email" required ></label>
-        <label for="phone" class="top">Phone*
-          <input type="tel" name="phone" placeholder="1235551234" id="phone" pattern="[0-9]{10}" required ></label>
+          <label class="top">Name* <input type="text" id="user-name" name="user-name" required ></label>
+          <label class="top">Email*
+              <input type="email" id="email" name="email" placeholder="someone@gmail.com" required ></label>
+          <label class="top">Cell phone number*
+              <input type="tel" id = "cell-phone" name="cell-phone" placeholder="1235551234" required ></label>
+      
+          <label class="top">Select a fruit*
+              <select name="Fruit-1" id="fruit-1" required>
+                  <option value="">--choose a fruit--</option>
+              </select>
+          </label>
+          <label class="top">Select a fruit
+              <select name="Fruit-2" id="fruit-2">
+                  <option value="">--choose a fruit--</option>
+              </select>
+          </label>
+          <label class="top">Select a fruit
+              <select name="Fruit-3" id="fruit-3">
+                  <option value="">--choose a fruit--</option>
+              </select>
+          </label>
+          <label class="top">Special Instructions
+              <textarea name="special-instructions" id = "special-instructions" rows="3" cols="23"></textarea>
+          </label>
+          <button id="get-drink-info-button" type="submit" class="submit-btn">Submit</button>
+          <button id="drink-form-reset" type="reset" class="submit-btn reset-btn">Clear Form</button>
       </fieldset>
-      <fieldset>
-        <legend>Drink Order</legend>
-        <label for="ingredient1" class="top">First Ingredient
-          <select name="ingredient1" id="ingredient1" required>
-            <option value="" selected disabled>Choose an ingredient</option>
-          </select>
-        </label>
-        <label for="ingredient2" class="top">Second Ingredient
-          <select name="ingredient2" id="ingredient2">
-            <option value="" selected disabled>Choose an ingredient</option>
-          </select>
-        </label>
-        <label for="ingredient3" class="top">Third Ingredient
-          <select name="ingredient3" id="ingredient3">
-            <option value="" selected disabled>Choose an ingredient</option>
-          </select>
-        </label>
-        <label for="specialInstructions" class="top">Special Instructions
-          <textarea name="specialInstructions" id="specialInstructions" rows="5" cols="30"></textarea>
-        </label>
-      </fieldset>
-      <input type="hidden" name="dateSubmitted" value="" id="subDate">
-      <input type="submit" id="subButton" name="subButton" value="Order Drink" class="form-button" >
-    </form>
-    <div id="drinkOrder" class="def-div">
-      <h3>Drink Order</h3>
-      <p>
-        <strong>Date Ordered:</strong><br>
-        <span id="drinkOrderDate"></span>
-      </p>
-      <p>
-        <strong>First Name:</strong><br>
-        <span id="orderFirstName"></span>
-      </p>
-      <p>
-        <strong>Last Name:</strong><br>
-        <span id="orderLastName"></span>
-      </p>
-      <p>
-        <strong>Email:</strong><br>
-        <span id="orderEmail"></span>
-      </p>
-      <p>
-        <strong>Phone:</strong><br>
-        <span id="orderPhone"></span>
-      </p>
-      <p>
-        <strong>First Ingredient:</strong><br>
-        <span id="orderIngredient1"></span>
-      </p>
-      <p>
-        <strong>Second Ingredient:</strong><br>
-        <span id="orderIngredient2"></span>
-      </p>
-      <p>
-        <strong>Third Ingredient:</strong><br>
-        <span id="orderIngredient3"></span>
-      </p>
-      <p>
-        <strong>Special Instructions:</strong><br>
-        <span id="orderSpecialInstructions"></span>
-      </p>
-      <p>
-        <strong>Total Carbohydrates:</strong><br>
-        <span id="totCarbs"></span>
-      </p>
-      <p>
-        <strong>Total Protein:</strong><br>
-        <span id="totProtein"></span>
-      </p>
-      <p>
-        <strong>Total Fat:</strong><br >
-        <span id="totFat"></span>
-      </p>
-      <p>
-        <strong>Total Calories:</strong><br >
-        <span id="totCalories"></span>
-      </p>
-      <p>
-        <strong>Total Sugar:</strong><br>
-        <span id="totSugar"></span>
-      </p>
-      <br>
-      <p>
-        Fresh fruits can be purchased at our storefront or any of our food
-        trucks.
-      </p>
+
+      <input type="text" id="drink-date" name="drink-date" hidden >
+  </form>
+
+    <div class="drink-list-outer-div center">
+      <h2>Your Drinks</h2>
+      <hr>
+      <div id="drink-list-inner-div" class="scrollable">
+        <table class="drink-list" id="drink-list-table-id">
+        </table>
+      </div>
+    </div>
+    <div class="drink-nutrition-outer-div">
+      <h2>Drink Nutrition</h2>
+      <hr>
+      <table class="drink-nutrition-table center" id="drink-nutrition-table-id">
+        <tr>
+          <td>
+            <h2>Date</h2>
+          </td>
+          <td id="drink-date-cell-id">
+            <p></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Name</h2>
+          </td>
+          <td id="drink-user-name-cell-id">
+            <p></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Email</h2>
+          </td>
+          <td id="drink-user-email-cell-id"></td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Phone</h2>
+          </td>
+          <td id="drink-user-phone-cell-id"></td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Fruits</h2>
+          </td>
+          <td id="drink-fruit-names-cell-id"></td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Carbs</h2>
+          </td>
+          <td id="drink-carbs-cell-id"></td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Protein</h2>
+          </td>
+          <td id="drink-protein-cell-id"></td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Fat</h2>
+          </td>
+          <td id="drink-fat-cell-id"></td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Sugar</h2>
+          </td>
+          <td id="drink-sugar-cell-id"></td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Calories</h2>
+          </td>
+          <td id="drink-calories-cell-id"></td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Grams</h2>
+          </td>
+          <td id="drink-grams-cell-id"></td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Instructions</h2>
+          </td>
+          <td id="drink-special-instructions-cell-id"></td>
+        </tr>
+
+      </table>
+
+    </div>
+    <div id="drink-qr-outer-div" class="center margin20 drink-qr-outer-div">
+
+    </div>
+
+
     </div>
   </main>
   <footer>
     <div class="footer-site-info">
       <a href="index.html" class="logo-link">
-        <picture><img class="logo logo-footer" src="images/bountiful-logo.png" alt="Bountiful Foods Logo" >
+        <picture><img class="logo logo-footer" src="images/bountiful-logo.png" alt="Bountiful Foods Logo">
         </picture>
       </a>
       <h3 class="site-name name-footer">Carlsbad Bountiful Foods</h3>
       <p class="footer-address">
-        1234 Main Street<br >
+        1234 Main Street<br>
         Carlsbad, CA 92008<br>
       </p>
       <p class="footer-email">
@@ -171,7 +205,7 @@
     </div>
   </footer>
   <script src="scripts/bountiful.js"></script>
-  <script src="scripts/drink.js"></script>
+   <script src="scripts/fruitsorder.js" ></script>
 </body>
 
 </html>

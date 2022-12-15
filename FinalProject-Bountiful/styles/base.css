@@ -556,7 +556,153 @@ form label.top input:required:valid {
 #drinkOrder {
     padding-bottom: 1rem;
 }
+/* Start of fruits order */
+/* ----------- FORM -------------- */
+.form {
+    padding: 10px;
+  }
+  
+  .form label.top,
+  .form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--headline-color-on-color);
+    font-size: 0.8rem;
+  }
+  
+  .form label.top input,
+  .form label.top select,
+  .form label.top textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    margin-left: 5px;
+    color: #555;
+    background-color: #fff7effb;
+  }
+  
+  .form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: var(--headline-color-on-color);
+  }
+  
+  button.submit-btn {
+    border: 2px solid #49170b;
+    background-color: #155511;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    margin-top: 15px;
+    margin-left: 3px;
+    width: 96%;
+    max-width: 20rem;
+  }
+  
+  button.reset-btn {
+    background-color: #9c2c13;
+    color: white;
+  }
+  
+  button.submit-btn:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    cursor: pointer;
+  }
+  #drink-form h2, .drink-list-outer-div h2, .drink-nutrition-outer-div h2{
+    color: var(--primary-color);
+  }
 
+  .form label.top input {
+    border-left: #fff7effb solid 6px;
+  }
+  
+  .form label.top input:required {
+    border-left: red solid 6px;
+  }
+  
+  .form label.top input:required:valid {
+    border-left: green solid 6px;
+  }
+  
+  .scrollable {
+    overflow-y: scroll;
+    height: 200px;
+  }
+  
+  .selected {
+    background-color: #9c2c13;
+    color: #fff;
+  }
+  
+  div.drink-nutrition-outer-div,
+  div.drink-list-outer-div,
+  div.drink-qr-outer-div,
+  form.drink-order-form {
+    border: 5px solid var(--accent3-color);
+    border-radius: 25px;
+    margin: 1.5rem auto 0;
+    padding: 10px 10px;
+  }
+  
+  div.drink-nutrition-outer-div,
+  div.drink-list-outer-div {
+    justify-self: start;
+  }
+  
+  fieldset {
+    border: none;
+    
+  }
+  
+  table tr td h2,
+  table tr td p {
+    margin: 5px 0 0 4px;
+ 
+  }
+  
+  table.drink-nutrition-table tr td:nth-child(1) {
+    width: 80px;
+  }
+  
+  table.drink-nutrition-table tr td:nth-child(2) {
+    width: 300px;
+    max-width: 300px;
+    overflow-wrap: anywhere;
+  }
+  
+  div.drink-qr-outer-div img {
+    margin-top: 20px;
+    display: block;
+  }
+  
+  div.drink-qr-outer-div {
+    display: none;
+  }
+  
+  div.drink-qr-outer-div.has-qr {
+    display: block;
+  }
+  
+  div.drink-qr-outer-div h3 {
+    margin: 20px;
+  }
+  
+  table.drink-list tr td p {
+    margin: 10px;
+    
+  }
+  
+  .margin20 {
+    padding: 20px 0;
+  }
+  button.reset-btn {
+    background-color: var(--accent2-color);
+    color: white;
+}
+/* End of fruits order */
 /* Start of About Page */
 
 iframe {

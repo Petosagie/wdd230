@@ -148,7 +148,13 @@
  
   
   /* Start of Fresh Page */
-  
+  div.drink-nutrition-outer-div,
+  div.drink-list-outer-div,
+  div.drink-qr-outer-div,
+  form.drink-order-form {   
+    width: 50%;
+    
+  }
   form, #drinkOrder {
       max-width: 60%;
       margin: 0 auto;

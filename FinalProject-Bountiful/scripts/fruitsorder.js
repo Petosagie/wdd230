@@ -1,10 +1,9 @@
-const requestURL = "data.json";
+const requestURL = 'data.json';
 
 const drinkNutritionTable = document.getElementById("drink-nutrition-table-id");
 const drinkTable = document.getElementById("drink-list-table-id");
 const drinkTableScrollableDiv = document.getElementById("drink-list-inner-div");
 const drinkTableSelected = document.getElementsByClassName("selected");
-const drinkQROuterDiv = document.getElementById("drink-qr-outer-div");
 const drinkForm = document.getElementById("drink-form");
 const drinkFormReset = document.getElementById("drink-form-reset");
 
@@ -51,12 +50,12 @@ function loadFruitData (fruit) {
     
 }
 
-//wire up button event
+//Create button event
 const calculateDrinkButton = document.getElementById("get-drink-info-button");
 calculateDrinkButton.onclick = CalculateDrink;
 
 const clearFormButton = document.getElementById("clear-form-button");
-// clearFormButton.onmouseup
+
 
 
 function CalculateDrink() {
@@ -130,11 +129,8 @@ function CalculateDrink() {
         // bring the latest drink into view
         drinkTableScrollableDiv.scrollTo(0,drinkTable.scrollHeight);
 
-        //bring qr code into view
-        drinkQROuterDiv.scrollIntoView({behavior: "smooth", block: "end"});
-        
-        //clear the form
-        // drinkFormReset.click();
+             
+       
     }
 }
 
@@ -177,7 +173,7 @@ function loadDrinkTable() {
             });
 
             loadNutritionData(rowNumber);
-            createQR(rowNumber);
+            // createQR(rowNumber);
         })
 
         let drinkNumber = document.createElement('td');
@@ -201,9 +197,7 @@ function loadNutritionData(value) {
     let drinkList = JSON.parse(localStorage.drinkList);
     const drink = drinkList[value - 1]
 
-    // if (screen.width < 640) {
-    //     drinkNutritionTable.scrollIntoView({behavior: "smooth", block: "end"});
-    // }
+  
 
     drinkDate = new Date(parseInt(drink[date])).toDateString();
 
@@ -222,37 +216,7 @@ function loadNutritionData(value) {
     document.getElementById("drink-date-cell-id").innerHTML = "<p>" + drinkDate +"<p>";
 
 }
-
-function createQR(value) {
-    //get the current drink
-    let drinkList = JSON.parse(localStorage.drinkList);
-    const drink = drinkList[value - 1]
-
-    // clear all children
-    drinkQROuterDiv.innerHTML = "";
-    
-    if (value != null) {
-
-        //read current nutrition div data into a string.
-        dataString = encodeURI(JSON.stringify(drink));
-    
-        //create the header
-        qrHeader = document.createElement('h3');
-        qrHeader.innerText = "Scan this code at our store to order your drink!";
-        
-        
-        // create a new img and add the qrcode link to the div
-        qrSrc = document.createElement('img');
-        qrSrc.src = "https://api.qrserver.com/v1/create-qr-code/?data=" + dataString + "&amp";
-        qrSrc.alt = "qr code";
-        qrSrc.height = "150";
-        qrSrc.width = "150";
-        qrSrc.classList.add("center");
-        drinkQROuterDiv.classList.add("has-qr")
-        drinkQROuterDiv.appendChild(qrSrc);
-        drinkQROuterDiv.appendChild(qrHeader);
-    }
-}       
+   
 
 let getSiblings = function (e) {
     // for collecting siblings

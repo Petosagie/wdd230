@@ -230,7 +230,13 @@
   .about-main {
       max-width: 80%;
   }
-  
+  div.drink-nutrition-outer-div,
+  div.drink-list-outer-div,
+  div.drink-qr-outer-div,
+  form.drink-order-form {   
+    width: 70%;
+    
+  }
   
   
   }
