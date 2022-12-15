@@ -189,6 +189,10 @@ nav ul li a.active {
     margin-top: 0;
 }
 
+.shadow {
+    transition: transform .5s;   
+  }
+
 .def-div {
     background-color: var(--accent3-color);
     margin: .5rem auto;
@@ -279,8 +283,12 @@ nav ul li a.active {
     margin: 1rem 0;
     width: 100%;
     margin-top: 0;
+    border-radius: 25px;
 }
-
+.drinks-ordered button:hover {
+    background-color:var(--accent2-color);
+    color: #12120ab8;
+}
 .about-area-div {
     grid-row: 5 / 6;
 }
