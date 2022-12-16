@@ -633,7 +633,7 @@ form label.top input:required:valid {
   }
   
   .selected {
-    background-color: #9c2c13;
+    background-color: var(--accent-color);
     color: #fff;
   }
   
