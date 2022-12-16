@@ -93,20 +93,10 @@ function CalculateDrink() {
                 drink_selection[fat] += (currentFat);
                 drink_selection[sugar] += (currentSugar);
                 drink_selection[calories] += (currentCalories);
-                drink_selection[grams] += (100);
+             
 
             }
         })
-
-        // adjust values to 450g = 15.9 oz.
-        ratio = 450 / drink_selection[grams];
-        drink_selection[carbohydrates] = Math.round(drink_selection[carbohydrates] * ratio);
-        drink_selection[protein] = Math.round(drink_selection[protein] * ratio);
-        drink_selection[fat] = Math.round(drink_selection[fat] * ratio);
-        drink_selection[sugar] = Math.round(drink_selection[sugar] * ratio);
-        drink_selection[calories] = Math.round(drink_selection[calories] * ratio);
-        drink_selection[grams] = Math.round(drink_selection[grams] * ratio);
-
 
         //add item to local storage 
         let drinkList = localStorage.drinkList;
@@ -213,7 +203,6 @@ function loadNutritionData(value) {
     document.querySelector("#drink-fat-cell-id").innerHTML = "<p>" + drink[fat] + "</p>";
     document.querySelector("#drink-sugar-cell-id").innerHTML = "<p>" + drink[sugar] + "</p>";
     document.querySelector("#drink-calories-cell-id").innerHTML = "<p>" + drink[calories] + "</p>";
-    document.querySelector("#drink-grams-cell-id").innerHTML = "<p>" + drink[grams] +"<p>";
     document.querySelector("#drink-date-cell-id").innerHTML = "<p>" + drinkDate +"<p>";
 
 }
