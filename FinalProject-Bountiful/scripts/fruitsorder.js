@@ -1,15 +1,15 @@
 const requestURL = 'data.json';
 
-const drinkNutritionTable = document.getElementById("drink-nutrition-table-id");
-const drinkTable = document.getElementById("drink-list-table-id");
-const drinkTableScrollableDiv = document.getElementById("drink-list-inner-div");
-const drinkTableSelected = document.getElementsByClassName("selected");
-const drinkForm = document.getElementById("drink-form");
-const drinkFormReset = document.getElementById("drink-form-reset");
+const drinkNutritionTable = document.querySelector("#drink-nutrition-table-id");
+const drinkTable = document.querySelector("#drink-list-table-id");
+const drinkTableScrollableDiv = document.querySelector("#drink-list-inner-div");
+const drinkTableSelected = document.querySelector(".selected");
+const drinkForm = document.querySelector("#drink-form");
+const drinkFormReset = document.querySelector("#drink-form-reset");
 
-const fruit1 = document.getElementById("fruit-1");
-const fruit2 = document.getElementById("fruit-2");
-const fruit3 = document.getElementById("fruit-3");
+const fruit1 = document.querySelector("#fruit-1");
+const fruit2 = document.querySelector("#fruit-2");
+const fruit3 = document.querySelector("#fruit-3");
 
 const fruitNames = 1;
 const carbohydrates = 2;
@@ -51,10 +51,10 @@ function loadFruitData (fruit) {
 }
 
 //Create button event
-const calculateDrinkButton = document.getElementById("get-drink-info-button");
+const calculateDrinkButton = document.querySelector("#get-drink-info-button");
 calculateDrinkButton.onclick = CalculateDrink;
 
-const clearFormButton = document.getElementById("clear-form-button");
+const clearFormButton = document.querySelector("#clear-form-button");
 
 
 
@@ -72,10 +72,10 @@ function CalculateDrink() {
         drink_selection[sugar] = 0;
         drink_selection[calories] = 0;
         drink_selection[grams] = 0;
-        drink_selection[userName] = document.getElementById("user-name").value;
-        drink_selection[email] = document.getElementById("email").value;
-        drink_selection[cellPhone] = document.getElementById("cell-phone").value;
-        drink_selection[specialInstructions] = document.getElementById("special-instructions").value;
+        drink_selection[userName] = document.querySelector("#user-name").value;
+        drink_selection[email] = document.querySelector("#email").value;
+        drink_selection[cellPhone] = document.querySelector("#cell-phone").value;
+        drink_selection[specialInstructions] = document.querySelector("#special-instructions").value;
         const fruitSelectionList = [fruit1,fruit2, fruit3];
         fruitSelectionList.forEach((item) => {
 
@@ -203,18 +203,18 @@ function loadNutritionData(value) {
     drinkDate = new Date(parseInt(drink[date])).toDateString();
 
     //walk the current drink selection, add data to the table.
-    document.getElementById("drink-user-name-cell-id").innerHTML = "<p>" + drink[userName] + "</p>";
-    document.getElementById("drink-user-email-cell-id").innerHTML = "<p>" + drink[email] + "</p>";
-    document.getElementById("drink-user-phone-cell-id").innerHTML = "<p>" + drink[cellPhone] + "<p>";
-    document.getElementById("drink-special-instructions-cell-id").innerHTML = "<p>" + drink[specialInstructions] + "</p>";
-    document.getElementById("drink-fruit-names-cell-id").innerHTML = "<p>" + drink[fruitNames]+ "</p>";
-    document.getElementById("drink-carbs-cell-id").innerHTML = "<p>" + drink[carbohydrates] + "</p>";
-    document.getElementById("drink-protein-cell-id").innerHTML = "<p>" + drink[protein] + "</p>";
-    document.getElementById("drink-fat-cell-id").innerHTML = "<p>" + drink[fat] + "</p>";
-    document.getElementById("drink-sugar-cell-id").innerHTML = "<p>" + drink[sugar] + "</p>";
-    document.getElementById("drink-calories-cell-id").innerHTML = "<p>" + drink[calories] + "</p>";
-    document.getElementById("drink-grams-cell-id").innerHTML = "<p>" + drink[grams] +"<p>";
-    document.getElementById("drink-date-cell-id").innerHTML = "<p>" + drinkDate +"<p>";
+    document.querySelector("#drink-user-name-cell-id").innerHTML = "<p>" + drink[userName] + "</p>";
+    document.querySelector("#drink-user-email-cell-id").innerHTML = "<p>" + drink[email] + "</p>";
+    document.querySelector("#drink-user-phone-cell-id").innerHTML = "<p>" + drink[cellPhone] + "<p>";
+    document.querySelector("#drink-special-instructions-cell-id").innerHTML = "<p>" + drink[specialInstructions] + "</p>";
+    document.querySelector("#drink-fruit-names-cell-id").innerHTML = "<p>" + drink[fruitNames]+ "</p>";
+    document.querySelector("#drink-carbs-cell-id").innerHTML = "<p>" + drink[carbohydrates] + "</p>";
+    document.querySelector("#drink-protein-cell-id").innerHTML = "<p>" + drink[protein] + "</p>";
+    document.querySelector("#drink-fat-cell-id").innerHTML = "<p>" + drink[fat] + "</p>";
+    document.querySelector("#drink-sugar-cell-id").innerHTML = "<p>" + drink[sugar] + "</p>";
+    document.querySelector("#drink-calories-cell-id").innerHTML = "<p>" + drink[calories] + "</p>";
+    document.querySelector("#drink-grams-cell-id").innerHTML = "<p>" + drink[grams] +"<p>";
+    document.querySelector("#drink-date-cell-id").innerHTML = "<p>" + drinkDate +"<p>";
 
 }
    
