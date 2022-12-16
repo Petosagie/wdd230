@@ -614,7 +614,7 @@ form label.top input:required:valid {
   #drink-form h2, .drink-list-outer-div h2, .drink-nutrition-outer-div h2{
     color: var(--primary-color);
   }
-
+  
   .form label.top input {
     border-left: #fff7effb solid 6px;
   }
