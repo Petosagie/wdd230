@@ -97,6 +97,12 @@ function CalculateDrink() {
 
             }
         })
+        // Make nutrients two decimal points
+        drink_selection[carbohydrates] = (drink_selection[carbohydrates] ).toFixed(2);
+        drink_selection[protein] = (drink_selection[protein]).toFixed(2);
+        drink_selection[fat] = (drink_selection[fat] ).toFixed(2);
+        drink_selection[sugar] = (drink_selection[sugar]).toFixed(2);
+        drink_selection[calories] = (drink_selection[calories]).toFixed(2);
 
         //add item to local storage 
         let drinkList = localStorage.drinkList;
