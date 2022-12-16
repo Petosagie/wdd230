@@ -173,7 +173,7 @@ function loadDrinkTable() {
             });
 
             loadNutritionData(rowNumber);
-            // createQR(rowNumber);
+            console.log(rowNumber);
         })
 
         let drinkNumber = document.createElement('td');
@@ -186,7 +186,8 @@ function loadDrinkTable() {
         drinkRow.appendChild(drinkName);
     
         drinkTable.appendChild(drinkRow);
-    
+        
+        
     })
     
 }

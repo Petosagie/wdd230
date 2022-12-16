@@ -636,6 +636,11 @@ form label.top input:required:valid {
     background-color: var(--accent-color);
     color: #fff;
   }
+   
+  .selected:hover {
+    background-color: var(--accent2-color);
+    color: black;
+  }
   
   div.drink-nutrition-outer-div,
   div.drink-list-outer-div,
